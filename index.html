@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Internal TikTok Content Management Tool</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    h1 {
+      font-size: 28px;
+      margin-bottom: 12px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #d0d0d0;
+    }
+    .card {
+      background: #1a1a1a;
+      border-radius: 12px;
+      padding: 24px;
+      margin-top: 24px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+    }
+    button {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 12px 20px;
+      border-radius: 8px;
+      border: none;
+      font-size: 15px;
+      cursor: pointer;
+    }
+    .btn-primary {
+      background: #fe2c55;
+      color: white;
+    }
+    .btn-secondary {
+      background: #333333;
+      color: white;
+      margin-left: 8px;
+    }
+    .status {
+      margin-top: 16px;
+      font-size: 14px;
+      color: #7CFF7C;
+      display: none;
+    }
+    footer {
+      margin-top: 48px;
+      font-size: 13px;
+      color: #999999;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Internal TikTok Content Management Tool</h1>
+    <p>
+      This website represents an internal web-based tool used by the developer
+      to manage and publish video content to TikTok accounts owned and operated
+      by the developer.
+    </p>
+
+    <div class="card">
+      <h2>1. Connect to TikTok</h2>
+      <p>
+        The app connects to TikTok through official authorization in order to
+        publish video content to the developer's own accounts.
+      </p>
+      <button class="btn-primary" onclick="connectTikTok()">Connect with TikTok</button>
+      <div id="connectStatus" class="status">✔ TikTok authorization successful</div>
+    </div>
+
+    <div class="card">
+      <h2>2. Upload & Publish Video</h2>
+      <p>
+        After authorization, the developer can upload a video and publish it
+        directly to TikTok.
+      </p>
+      <input type="file" accept="video/*" />
+      <br />
+      <button class="btn-secondary" onclick="publishVideo()">Publish Video</button>
+      <div id="publishStatus" class="status">✔ Video published successfully</div>
+    </div>
+
+    <footer>
+      This tool is for internal use only and is not a public SaaS product.
+    </footer>
+  </div>
+
+  <script>
+    function connectTikTok() {
+      document.getElementById('connectStatus').style.display = 'block';
+    }
+
+    function publishVideo() {
+      document.getElementById('publishStatus').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
