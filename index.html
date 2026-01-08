@@ -1,114 +1,581 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Internal TikTok Content Management Tool</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #0f0f0f;
-      color: #ffffff;
-      margin: 0;
-      padding: 0;
-    }
-    .container {
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 40px 20px;
-    }
-    h1 {
-      font-size: 28px;
-      margin-bottom: 12px;
-    }
-    p {
-      font-size: 16px;
-      line-height: 1.6;
-      color: #d0d0d0;
-    }
-    .card {
-      background: #1a1a1a;
-      border-radius: 12px;
-      padding: 24px;
-      margin-top: 24px;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.4);
-    }
-    button {
-      display: inline-block;
-      margin-top: 16px;
-      padding: 12px 20px;
-      border-radius: 8px;
-      border: none;
-      font-size: 15px;
-      cursor: pointer;
-    }
-    .btn-primary {
-      background: #fe2c55;
-      color: white;
-    }
-    .btn-secondary {
-      background: #333333;
-      color: white;
-      margin-left: 8px;
-    }
-    .status {
-      margin-top: 16px;
-      font-size: 14px;
-      color: #7CFF7C;
-      display: none;
-    }
-    footer {
-      margin-top: 48px;
-      font-size: 13px;
-      color: #999999;
-      text-align: center;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="🎮 We create delightful games and smart learning tools for all ages. Explore, play, and grow with Zubbly Studio! 🎉">
+    <meta name="keywords" content="Zubbly Studio, Game Booster, Mobile Apps, Android Games, Learning Tools">
+    <meta name="author" content="Zubbly Studio">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Zubbly Studio - Delightful Games & Smart Learning Tools">
+    <meta property="og:description" content="🎮 We create delightful games and smart learning tools for all ages. Explore, play, and grow with Zubbly Studio! 🎉">
+    <meta property="og:url" content="https://truongvanlongofficial.github.io/public-website-io/">
+    
+    <title>Zubbly Studio - Delightful Games & Smart Learning Tools</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            --accent-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            --success-gradient: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+            --dark-bg: #0a0e27;
+            --dark-card: #151933;
+            --dark-card-hover: #1e2344;
+            --text-primary: #ffffff;
+            --text-secondary: #a0aec0;
+            --border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--dark-bg);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Animated Background */
+        .bg-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .bg-animation::before {
+            content: '';
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle at 20% 50%, rgba(102, 126, 234, 0.15) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 80%, rgba(245, 87, 108, 0.15) 0%, transparent 50%),
+                        radial-gradient(circle at 40% 20%, rgba(67, 233, 123, 0.1) 0%, transparent 50%);
+            animation: bgFloat 20s ease-in-out infinite;
+        }
+
+        @keyframes bgFloat {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            33% { transform: translate(30px, -30px) rotate(120deg); }
+            66% { transform: translate(-20px, 20px) rotate(240deg); }
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            padding: 60px 0 40px;
+            text-align: center;
+            position: relative;
+        }
+
+        .logo {
+            font-family: 'Outfit', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 900;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 20px;
+            animation: fadeInDown 0.8s ease-out;
+        }
+
+        .tagline {
+            font-size: 1.3rem;
+            color: var(--text-secondary);
+            max-width: 700px;
+            margin: 0 auto 40px;
+            line-height: 1.8;
+            animation: fadeInUp 0.8s ease-out 0.2s backwards;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fadeInUp 0.8s ease-out 0.4s backwards;
+        }
+
+        .btn {
+            padding: 16px 40px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1rem;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary {
+            background: var(--primary-gradient);
+            color: white;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.15);
+            border-color: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+
+        /* Featured App Section */
+        .featured-section {
+            padding: 60px 0;
+            animation: fadeIn 1s ease-out 0.6s backwards;
+        }
+
+        .section-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 50px;
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .featured-card {
+            background: var(--dark-card);
+            border-radius: 30px;
+            padding: 50px;
+            border: 1px solid var(--border-color);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .featured-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--primary-gradient);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            z-index: 0;
+        }
+
+        .featured-card:hover::before {
+            opacity: 0.05;
+        }
+
+        .featured-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(102, 126, 234, 0.5);
+            box-shadow: 0 20px 60px rgba(102, 126, 234, 0.2);
+        }
+
+        .featured-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .featured-badge {
+            display: inline-block;
+            background: var(--success-gradient);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .featured-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+            color: var(--text-primary);
+        }
+
+        .featured-rating {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .stars {
+            color: #fbbf24;
+            font-size: 1.3rem;
+        }
+
+        .featured-description {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .featured-image {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+        }
+
+        .app-icon {
+            width: 200px;
+            height: 200px;
+            border-radius: 50px;
+            background: var(--primary-gradient);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 5rem;
+            margin: 0 auto;
+            box-shadow: 0 20px 60px rgba(102, 126, 234, 0.4);
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        /* Apps Grid */
+        .apps-section {
+            padding: 60px 0;
+            animation: fadeIn 1s ease-out 0.8s backwards;
+        }
+
+        .apps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .app-card {
+            background: var(--dark-card);
+            border-radius: 20px;
+            padding: 30px;
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .app-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--primary-gradient);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .app-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .app-card:hover {
+            background: var(--dark-card-hover);
+            transform: translateY(-5px);
+            border-color: rgba(102, 126, 234, 0.3);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .app-card h3 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: var(--text-primary);
+        }
+
+        .app-card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .app-rating {
+            display: inline-block;
+            background: rgba(251, 191, 36, 0.2);
+            color: #fbbf24;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-top: 15px;
+        }
+
+        /* Footer */
+        footer {
+            padding: 60px 0 40px;
+            text-align: center;
+            border-top: 1px solid var(--border-color);
+            margin-top: 80px;
+        }
+
+        .footer-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .footer-logo {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2rem;
+            font-weight: 800;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 20px;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--text-primary);
+        }
+
+        .copyright {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-top: 30px;
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 2.5rem;
+            }
+
+            .tagline {
+                font-size: 1.1rem;
+            }
+
+            .featured-card {
+                grid-template-columns: 1fr;
+                padding: 30px;
+                gap: 30px;
+            }
+
+            .featured-title {
+                font-size: 1.8rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .apps-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Internal TikTok Content Management Tool</h1>
-    <p>
-      This website represents an internal web-based tool used by the developer
-      to manage and publish video content to TikTok accounts owned and operated
-      by the developer.
-    </p>
+    <div class="bg-animation"></div>
 
-    <div class="card">
-      <h2>1. Connect to TikTok</h2>
-      <p>
-        The app connects to TikTok through official authorization in order to
-        publish video content to the developer's own accounts.
-      </p>
-      <button class="btn-primary" onclick="connectTikTok()">Connect with TikTok</button>
-      <div id="connectStatus" class="status">✔ TikTok authorization successful</div>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1 class="logo">Zubbly Studio</h1>
+            <p class="tagline">
+                🎮 We create delightful games and smart learning tools for all ages. Explore, play, and grow with Zubbly Studio! 🎉
+            </p>
+            <div class="cta-buttons">
+                <a href="https://play.google.com/store/apps/dev?id=6661239579461321586" class="btn btn-primary" target="_blank">
+                    <span>📱</span> View All Apps
+                </a>
+                <a href="mailto:longtv25102000@gmail.com" class="btn btn-secondary">
+                    <span>✉️</span> Contact Us
+                </a>
+            </div>
+        </header>
+
+        <!-- Featured App -->
+        <section class="featured-section">
+            <h2 class="section-title">⭐ Featured App</h2>
+            <div class="featured-card">
+                <div class="featured-content">
+                    <span class="featured-badge">Most Popular</span>
+                    <h3 class="featured-title">Game Booster: Lag Fix & GFX</h3>
+                    <div class="featured-rating">
+                        <span class="stars">⭐⭐⭐⭐⭐</span>
+                        <span>4.5</span>
+                    </div>
+                    <p class="featured-description">
+                        Reduce ping, optimize network, and boost gaming performance with one tap. 
+                        Experience smoother gameplay and eliminate lag for the ultimate gaming experience.
+                    </p>
+                    <a href="https://play.google.com/store/apps/details?id=com.longtv.gamebooster" class="btn btn-primary" target="_blank">
+                        <span>🚀</span> Download Now
+                    </a>
+                </div>
+                <div class="featured-image">
+                    <div class="app-icon">🎮</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- More Apps -->
+        <section class="apps-section">
+            <h2 class="section-title">🎯 More Amazing Apps</h2>
+            <div class="apps-grid">
+                <div class="app-card" onclick="window.open('https://play.google.com/store/apps/details?id=com.smartfactory.datasaverpro', '_blank')">
+                    <h3>📊 Data Saver Pro 3G 4G 5G</h3>
+                    <p>Save mobile data and monitor your usage with advanced compression technology.</p>
+                </div>
+
+                <div class="app-card" onclick="window.open('https://play.google.com/store/apps/details?id=com.longtv.game2048', '_blank')">
+                    <h3>🧩 2048 Puzzle Challenge 2026</h3>
+                    <p>Classic puzzle game with modern twists. Train your brain and beat high scores!</p>
+                    <span class="app-rating">⭐ 5.0</span>
+                </div>
+
+                <div class="app-card" onclick="window.open('https://play.google.com/store/apps/details?id=com.longtv.livewallpaper', '_blank')">
+                    <h3>🖼️ Live Wallpapers, 4K Wallpapers</h3>
+                    <p>Transform your screen with stunning 4K live wallpapers and dynamic backgrounds.</p>
+                    <span class="app-rating">⭐ 5.0</span>
+                </div>
+
+                <div class="app-card" onclick="window.open('https://play.google.com/store/apps/details?id=com.longtv.musicapp', '_blank')">
+                    <h3>🎵 Super Hi-Res Music Player</h3>
+                    <p>Experience crystal-clear audio with our high-resolution music player.</p>
+                    <span class="app-rating">⭐ 5.0</span>
+                </div>
+
+                <div class="app-card" onclick="window.open('https://play.google.com/store/apps/details?id=com.longtv.thuyhu', '_blank')">
+                    <h3>⚔️ Thuỷ Hử</h3>
+                    <p>Epic adventure game based on classic Chinese literature. Join the heroes!</p>
+                    <span class="app-rating">⭐ 5.0</span>
+                </div>
+
+                <div class="app-card" onclick="window.open('https://play.google.com/store/apps/details?id=com.longtv.hanzhaozhanzhenyingxiong.hanzhaozhanzhenyingxiong', '_blank')">
+                    <h3>🏛️ Hán Sở Tranh Hùng</h3>
+                    <p>Strategic warfare game set in ancient China. Build your empire and conquer!</p>
+                    <span class="app-rating">⭐ 4.7</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-logo">Zubbly Studio</div>
+                <p style="color: var(--text-secondary); margin-bottom: 20px;">
+                    Creating delightful experiences for millions of users worldwide.
+                </p>
+                <div class="footer-links">
+                    <a href="https://play.google.com/store/apps/dev?id=6661239579461321586" target="_blank">Google Play</a>
+                    <a href="mailto:longtv25102000@gmail.com">Contact</a>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+                <p class="copyright">
+                    © 2026 Zubbly Studio. All rights reserved.
+                </p>
+            </div>
+        </footer>
     </div>
-
-    <div class="card">
-      <h2>2. Upload & Publish Video</h2>
-      <p>
-        After authorization, the developer can upload a video and publish it
-        directly to TikTok.
-      </p>
-      <input type="file" accept="video/*" />
-      <br />
-      <button class="btn-secondary" onclick="publishVideo()">Publish Video</button>
-      <div id="publishStatus" class="status">✔ Video published successfully</div>
-    </div>
-
-    <footer>
-      This tool is for internal use only and is not a public SaaS product.
-    </footer>
-  </div>
-
-  <script>
-    function connectTikTok() {
-      document.getElementById('connectStatus').style.display = 'block';
-    }
-
-    function publishVideo() {
-      document.getElementById('publishStatus').style.display = 'block';
-    }
-  </script>
 </body>
 </html>
