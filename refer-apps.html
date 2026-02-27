@@ -27,6 +27,7 @@
         body {
             overflow-x: hidden;
             width: 100%;
+            position: relative;
         }
 
         body {
@@ -36,26 +37,32 @@
             padding: calc(92px + env(safe-area-inset-top)) 16px calc(32px + env(safe-area-inset-bottom)) 16px;
             opacity: 0;
             transition: opacity 0.4s ease;
-            width: 100vw;
+            width: 100%;
+            /* Changed from 100vw to 100% to prevent overflow */
         }
 
         .header {
-            text-align: center;
+            text-align: left;
+            /* Changed to left to better handle back button space */
             margin-bottom: 40px;
+            padding-left: 56px;
+            /* Special padding to avoid back button overlap */
+            padding-right: 16px;
         }
 
         .header h1 {
-            font-size: 32px;
+            font-size: 28px;
+            /* Slightly smaller to fit better */
             font-weight: 800;
             letter-spacing: -0.03em;
             margin-bottom: 8px;
+            line-height: 1.2;
         }
 
         .header p {
             color: var(--text-secondary);
             font-size: 14px;
             line-height: 1.5;
-            padding: 0 20px;
         }
 
         .apps-container {
