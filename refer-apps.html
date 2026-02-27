@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
     <title>Our Apps - Smart App Factory</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <style>
@@ -24,25 +24,31 @@
 
         html, body {
             width: 100%;
-            max-width: 100%;
-            overflow-x: hidden;
+            max-width: 100vw;
             height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden !important;
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
             position: relative;
+            background-color: var(--bg-color);
         }
 
         body {
             font-family: 'Inter', sans-serif;
-            background-color: var(--bg-color);
             color: var(--text-primary);
-            padding: calc(80px + env(safe-area-inset-top)) 16px calc(40px + env(safe-area-inset-bottom)) 16px;
+            /* Padding an toàn cho cả màn hình đục lỗ/tai thỏ */
+            padding: calc(88px + env(safe-area-inset-top)) 12px calc(40px + env(safe-area-inset-bottom)) 12px;
             opacity: 0;
             transition: opacity 0.4s ease;
+            min-height: 100vh;
         }
 
         .header {
             text-align: left;
             margin-bottom: 32px;
-            padding: 0 4px;           /* nhỏ hơn, đồng bộ với card */
+            padding: 0 4px;
         }
 
         .header h1 {
@@ -63,22 +69,42 @@
             display: grid;
             grid-template-columns: 1fr;
             gap: 16px;
+            width: 100%;
+            max-width: 100%;
+            overflow: hidden;
+            /* Giúp trình duyệt Android render layer tốt hơn, tránh lỗi tràn layout do hiệu ứng blur */
+            contain: paint; 
         }
 
         .app-card {
-            background: var(--card-bg);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            border-radius: 28px;
-            padding: 16px;
+            position: relative;
             display: flex;
             align-items: center;
+            padding: 16px;
             text-decoration: none;
             color: inherit;
-            backdrop-filter: blur(20px);
-            transition: transform 0.2s ease;
-            width: 100%;
-            max-width: 100%;
+            border-radius: 28px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            width: 100% !important;
             box-sizing: border-box;
+            overflow: hidden;
+            /* Force GPU rendering to fix glitchy overflow on Samsung devices */
+            transform: translateZ(0); 
+            /* Cô lập hiệu ứng blur không cho tràn ra ngoài border */
+            isolation: isolate; 
+            transition: transform 0.2s ease;
+        }
+
+        /* Tách hiệu ứng Blur ra một layer riêng phía sau để không ảnh hưởng đến kích thước card */
+        .app-card::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: var(--card-bg);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            z-index: -1;
+            border-radius: 28px;
         }
 
         .app-card:active {
@@ -96,7 +122,7 @@
             overflow: hidden;
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
             flex-shrink: 0;
-            background: #2D3748; /* fallback color */
+            background: #2D3748;
         }
 
         .app-icon-img {
@@ -186,6 +212,7 @@
         const urlParams = new URLSearchParams(window.location.search);
         const lang = urlParams.get('lang') || 'en';
 
+        // Tự động load ngôn ngữ từ file JSON tương tự như trước
         fetch('translations.json')
             .then(response => response.json())
             .then(data => {
