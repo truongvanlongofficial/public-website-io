@@ -1,16 +1,17 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <title>Our Apps - Smart App Factory</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <style>
         :root {
             --bg-color: #0F172A;
             --card-bg: rgba(15, 23, 42, 0.4);
-            /* Glassmorphism darker */
             --text-primary: #FFFFFF;
             --text-secondary: #94A3B8;
             --accent-blue: #38BDF8;
@@ -27,48 +28,51 @@
         body {
             overflow-x: hidden;
             width: 100%;
-            position: relative;
+            background-color: var(--bg-color);
         }
 
         body {
             font-family: 'Inter', sans-serif;
-            background-color: var(--bg-color);
             color: var(--text-primary);
-            padding: calc(92px + env(safe-area-inset-top)) 16px calc(32px + env(safe-area-inset-bottom)) 16px;
+            padding: calc(85px + env(safe-area-inset-top)) 0 calc(32px + env(safe-area-inset-bottom)) 0;
             opacity: 0;
             transition: opacity 0.4s ease;
+        }
+
+        .wrapper {
             width: 100%;
-            /* Changed from 100vw to 100% to prevent overflow */
+            max-width: 100%;
+            padding: 0 16px;
+            margin: 0 auto;
         }
 
         .header {
             text-align: left;
-            /* Changed to left to better handle back button space */
-            margin-bottom: 40px;
-            padding-left: 56px;
-            /* Special padding to avoid back button overlap */
-            padding-right: 16px;
+            margin-bottom: 32px;
+            padding-left: 60px;
+            /* More space for the back button */
+            padding-right: 4px;
         }
 
         .header h1 {
-            font-size: 28px;
-            /* Slightly smaller to fit better */
+            font-size: 24px;
+            /* Slightly smaller for better fit */
             font-weight: 800;
-            letter-spacing: -0.03em;
-            margin-bottom: 8px;
-            line-height: 1.2;
+            letter-spacing: -0.02em;
+            margin-bottom: 6px;
+            line-height: 1.1;
         }
 
         .header p {
             color: var(--text-secondary);
-            font-size: 14px;
-            line-height: 1.5;
+            font-size: 13px;
+            line-height: 1.4;
         }
 
         .apps-container {
             display: grid;
             grid-template-columns: 1fr;
-            gap: 16px;
+            gap: 14px;
         }
 
         .app-card {
@@ -173,14 +177,15 @@
 </head>
 
 <body>
+    <div class="wrapper"></div>
+        <div class="header">
+            <h1 id="main-title">Loading...</h1>
+            <p id="main-subtitle"></p>
+        </div>
 
-    <div class="header">
-        <h1 id="main-title">Loading...</h1>
-        <p id="main-subtitle"></p>
-    </div>
-
-    <div class="apps-container" id="apps-list">
-        <!-- Rendered by JS -->
+        <div class="apps-container" id="apps-list">
+            <!-- Rendered by JS -->
+        </div>
     </div>
 
     <script>
