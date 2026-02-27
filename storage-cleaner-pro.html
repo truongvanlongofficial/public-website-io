@@ -190,9 +190,10 @@
                     card.className = 'app-card';
                     card.href = `market://details?id=${app.id}`;
 
-                    // Logic: Use icon from root folder if exists, else use colored fallback
-                    // You can put icons at: assets/more_apps/icons/com.pkg.name.png
-                    const iconPath = `icons/${app.id}.png`;
+                    // Logic: 1. Use icon_url from JSON if exists, 
+                    //        2. Else try local icons/{id}.png
+                    //        3. Finally fallback to letter icon
+                    const iconPath = app.icon_url || `icons/${app.id}.png`;
 
                     card.innerHTML = `
                         <div class="app-icon-container" style="background: ${app.color || '#2D3748'}">
