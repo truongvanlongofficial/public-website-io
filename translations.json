@@ -1,28 +1,58 @@
 {
-  "en": {
-    "title": "Our Powerful Tools",
-    "subtitle": "Enhance your mobile experience with our suite.",
-    "app_lock_title": "App Lock Pro",
-    "app_lock_desc": "Secure your photos, videos, and social apps with fingerprint lock.",
-    "cloner_title": "Dual App Cloner",
-    "cloner_desc": "Run multiple accounts of the same app simultaneously.",
-    "data_saver_title": "Data Saver Pro",
-    "data_saver_desc": "Monitor mobile data usage and save battery life.",
-    "net_health_title": "Net Health",
-    "net_health_desc": "Check your network stability and speed in real-time.",
-    "get": "GET"
-  },
-  "vi": {
-    "title": "Công cụ mạnh mẽ",
-    "subtitle": "Nâng cao trải nghiệm di động của bạn với bộ ứng dụng của chúng tôi.",
-    "app_lock_title": "Khóa ứng dụng Pro",
-    "app_lock_desc": "Bảo mật ảnh, video và ứng dụng xã hội bằng khóa vân tay.",
-    "cloner_title": "Dual App Cloner",
-    "cloner_desc": "Chạy nhiều tài khoản của cùng một ứng dụng cùng lúc.",
-    "data_saver_title": "Tiết kiệm dữ liệu Pro",
-    "data_saver_desc": "Theo dõi việc sử dụng dữ liệu di động và tiết kiệm pin.",
-    "net_health_title": "Sức khỏe mạng",
-    "net_health_desc": "Kiểm tra sự ổn định và tốc độ mạng của bạn trong thời gian thực.",
-    "get": "TẢI"
-  }
+    "en": {
+        "title": "Our Powerful Tools",
+        "subtitle": "Enhance your mobile experience with our suite.",
+        "get": "GET",
+        "apps": [
+            {
+                "id": "com.smartfactory.applock",
+                "name": "App Lock Pro",
+                "desc": "Secure your photos and social apps with fingerprint lock.",
+                "rating": "4.9",
+                "color": "linear-gradient(135deg, #F43F5E, #FB7185)"
+            },
+            {
+                "id": "com.smartfactory.cloner",
+                "name": "Dual App Cloner",
+                "desc": "Run multiple accounts of the same app simultaneously.",
+                "rating": "4.8",
+                "color": "linear-gradient(135deg, #38BDF8, #22D3EE)"
+            },
+            {
+                "id": "com.smartfactory.datasaver",
+                "name": "Data Saver Pro",
+                "desc": "Monitor usage and save your mobile data effectively.",
+                "rating": "4.7",
+                "color": "linear-gradient(135deg, #818CF8, #6366F1)"
+            }
+        ]
+    },
+    "vi": {
+        "title": "Công cụ mạnh mẽ",
+        "subtitle": "Nâng cao trải nghiệm di động của bạn với bộ ứng dụng của chúng tôi.",
+        "get": "TẢI",
+        "apps": [
+            {
+                "id": "com.smartfactory.applock",
+                "name": "Khóa ứng dụng Pro",
+                "desc": "Bảo mật ảnh, video và ứng dụng xã hội bằng khóa vân tay.",
+                "rating": "4.9",
+                "color": "linear-gradient(135deg, #F43F5E, #FB7185)"
+            },
+            {
+                "id": "com.smartfactory.cloner",
+                "name": "Nhân bản ứng dụng",
+                "desc": "Chạy nhiều tài khoản mạng xã hội cùng lúc dễ dàng.",
+                "rating": "4.8",
+                "color": "linear-gradient(135deg, #38BDF8, #22D3EE)"
+            },
+            {
+                "id": "com.smartfactory.nethealth",
+                "name": "Sức khỏe mạng",
+                "desc": "Kiểm tra sự ổn định và tốc độ mạng của bạn trong thời gian thực.",
+                "rating": "4.8",
+                "color": "linear-gradient(135deg, #10B981, #34D399)"
+            }
+        ]
+    }
 }
