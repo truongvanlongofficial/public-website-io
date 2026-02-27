@@ -23,6 +23,12 @@
             -webkit-tap-highlight-color: transparent;
         }
 
+        html,
+        body {
+            overflow-x: hidden;
+            width: 100%;
+        }
+
         body {
             font-family: 'Inter', sans-serif;
             background-color: var(--bg-color);
@@ -30,6 +36,7 @@
             padding: calc(92px + env(safe-area-inset-top)) 16px calc(32px + env(safe-area-inset-bottom)) 16px;
             opacity: 0;
             transition: opacity 0.4s ease;
+            width: 100vw;
         }
 
         .header {
@@ -125,6 +132,7 @@
             line-height: 1.4;
             display: -webkit-box;
             -webkit-line-clamp: 2;
+            line-clamp: 2;
             -webkit-box-orient: vertical;
             overflow: hidden;
         }
