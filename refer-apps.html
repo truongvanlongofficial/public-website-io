@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Our Apps - Smart App Factory</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <style>
@@ -27,7 +27,7 @@
             font-family: 'Inter', sans-serif;
             background-color: var(--bg-color);
             color: var(--text-primary);
-            padding: 24px 16px;
+            padding: calc(82px + env(safe-area-inset-top)) 16px 24px 16px;
             opacity: 0;
             /* Hiện sau khi load ngôn ngữ */
             transition: opacity 0.3s ease;
