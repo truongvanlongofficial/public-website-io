@@ -1,0 +1,28 @@
+{
+  "en": {
+    "title": "Our Powerful Tools",
+    "subtitle": "Enhance your mobile experience with our suite.",
+    "app_lock_title": "App Lock Pro",
+    "app_lock_desc": "Secure your photos, videos, and social apps with fingerprint lock.",
+    "cloner_title": "Dual App Cloner",
+    "cloner_desc": "Run multiple accounts of the same app simultaneously.",
+    "data_saver_title": "Data Saver Pro",
+    "data_saver_desc": "Monitor mobile data usage and save battery life.",
+    "net_health_title": "Net Health",
+    "net_health_desc": "Check your network stability and speed in real-time.",
+    "get": "GET"
+  },
+  "vi": {
+    "title": "Công cụ mạnh mẽ",
+    "subtitle": "Nâng cao trải nghiệm di động của bạn với bộ ứng dụng của chúng tôi.",
+    "app_lock_title": "Khóa ứng dụng Pro",
+    "app_lock_desc": "Bảo mật ảnh, video và ứng dụng xã hội bằng khóa vân tay.",
+    "cloner_title": "Dual App Cloner",
+    "cloner_desc": "Chạy nhiều tài khoản của cùng một ứng dụng cùng lúc.",
+    "data_saver_title": "Tiết kiệm dữ liệu Pro",
+    "data_saver_desc": "Theo dõi việc sử dụng dữ liệu di động và tiết kiệm pin.",
+    "net_health_title": "Sức khỏe mạng",
+    "net_health_desc": "Kiểm tra sự ổn định và tốc độ mạng của bạn trong thời gian thực.",
+    "get": "TẢI"
+  }
+}
