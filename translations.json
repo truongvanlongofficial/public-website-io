@@ -33,24 +33,31 @@
         "get": "TẢI",
         "apps": [
             {
-                "id": "com.smartfactory.applock",
-                "name": "Khóa ứng dụng Pro",
-                "desc": "Bảo mật ảnh, video và ứng dụng xã hội bằng khóa vân tay.",
-                "rating": "4.9",
+                "id": "com.longtv.gamebooster",
+                "name": "Game Booster: Lag Fix & GFX",
+                "desc": "Giảm ping, tối ưu mạng và tăng tốc chơi game chỉ với một chạm. Trải nghiệm game mượt mà hơn, loại bỏ hoàn toàn giật lag để tận hưởng những giây phút giải trí đỉnh cao.",
+                "rating": "4.7",
                 "color": "linear-gradient(135deg, #F43F5E, #FB7185)"
             },
             {
-                "id": "com.smartfactory.cloner",
-                "name": "Nhân bản ứng dụng",
-                "desc": "Chạy nhiều tài khoản mạng xã hội cùng lúc dễ dàng.",
-                "rating": "4.8",
+                "id": "com.smartfactory.datasaverpro",
+                "name": "Data Saver Pro 3G 4G 5G",
+                "desc": "Tiết kiệm data di động và kiểm soát mức tiêu dùng hiệu quả bằng công nghệ nén vượt trội",
+                "rating": "5",
                 "color": "linear-gradient(135deg, #38BDF8, #22D3EE)"
             },
             {
-                "id": "com.smartfactory.nethealth",
-                "name": "Sức khỏe mạng",
-                "desc": "Kiểm tra sự ổn định và tốc độ mạng của bạn trong thời gian thực.",
+                "id": "com.privacyvault.applock",
+                "name": "Privacy Vault – App Lock",
+                "desc": "Bảo vệ dữ liệu cá nhân và ngăn chặn truy cập trái phép với Privacy Vault. Công cụ bảo mật toàn diện này giúp bạn khóa các ứng dụng nhạy cảm, ẩn ảnh và video riêng tư, và bảo vệ thiết bị của bạn khỏi những kẻ tò mò.",
                 "rating": "4.8",
+                "color": "linear-gradient(135deg, #10B981, #34D399)"
+            },
+            {
+                "id": "com.privacyvault.applock",
+                "name": "Live Wallpapers, 4K Wallpapers",
+                "desc": "Hình nền động 4K – Dynamic Theme thổi hồn vào màn hình chính của bạn với những hình nền chuyển động tuyệt đẹp ở chất lượng siêu sắc nét. Tận hưởng chuyển động mượt mà, dải màu rực rỡ, phong cách hiện đại và các hiệu ứng sống động được thiết kế để giúp điện thoại của bạn luôn nổi bật.",
+                "rating": "5",
                 "color": "linear-gradient(135deg, #10B981, #34D399)"
             }
         ]
