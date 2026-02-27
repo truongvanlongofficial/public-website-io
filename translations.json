@@ -1,28 +1,35 @@
 {
     "en": {
-        "title": "Our Powerful Tools",
-        "subtitle": "Enhance your mobile experience with our suite.",
+        "title": "Powerful Tools",
+        "subtitle": "Enhance your mobile experience with our suite of apps.",
         "get": "GET",
         "apps": [
             {
-                "id": "com.smartfactory.applock",
-                "name": "App Lock Pro",
-                "desc": "Secure your photos and social apps with fingerprint lock.",
-                "rating": "4.9",
+                "id": "com.longtv.gamebooster",
+                "name": "Game Booster: Lag Fix & GFX",
+                "desc": "Reduce ping, optimize network and speed up gaming with just one tap. Enjoy smoother gameplay and eliminate lag instantly.",
+                "rating": "4.7",
                 "color": "linear-gradient(135deg, #F43F5E, #FB7185)"
             },
             {
-                "id": "com.smartfactory.cloner",
-                "name": "Dual App Cloner",
-                "desc": "Run multiple accounts of the same app simultaneously.",
-                "rating": "4.8",
+                "id": "com.smartfactory.datasaverpro",
+                "name": "Data Saver Pro 3G 4G 5G",
+                "desc": "Save mobile data and effectively control usage with superior compression technology.",
+                "rating": "5.0",
                 "color": "linear-gradient(135deg, #38BDF8, #22D3EE)"
             },
             {
-                "id": "com.smartfactory.datasaver",
-                "name": "Data Saver Pro",
-                "desc": "Monitor usage and save your mobile data effectively.",
-                "rating": "4.9",
+                "id": "com.privacyvault.applock",
+                "name": "Privacy Vault – App Lock",
+                "desc": "Protect your personal data and sensitive apps. Hide private photos and videos from prying eyes.",
+                "rating": "4.8",
+                "color": "linear-gradient(135deg, #10B981, #34D399)"
+            },
+            {
+                "id": "com.smartfactory.livewallpaper",
+                "name": "Live Wallpapers, 4K Wallpapers",
+                "desc": "Brings your home screen to life with stunning moving wallpapers in ultra-sharp quality.",
+                "rating": "5.0",
                 "color": "linear-gradient(135deg, #818CF8, #6366F1)"
             }
         ]
@@ -35,30 +42,590 @@
             {
                 "id": "com.longtv.gamebooster",
                 "name": "Game Booster: Lag Fix & GFX",
-                "desc": "Giảm ping, tối ưu mạng và tăng tốc chơi game chỉ với một chạm. Trải nghiệm game mượt mà hơn, loại bỏ hoàn toàn giật lag để tận hưởng những giây phút giải trí đỉnh cao.",
+                "desc": "Giảm ping, tối ưu mạng và tăng tốc chơi game chỉ với một chạm. Trải nghiệm game mượt mà hơn, loại bỏ hoàn toàn giật lag.",
                 "rating": "4.7",
                 "color": "linear-gradient(135deg, #F43F5E, #FB7185)"
             },
             {
                 "id": "com.smartfactory.datasaverpro",
                 "name": "Data Saver Pro 3G 4G 5G",
-                "desc": "Tiết kiệm data di động và kiểm soát mức tiêu dùng hiệu quả bằng công nghệ nén vượt trội",
-                "rating": "5",
+                "desc": "Tiết kiệm data di động và kiểm soát mức tiêu dùng hiệu quả bằng công nghệ nén vượt trội.",
+                "rating": "5.0",
                 "color": "linear-gradient(135deg, #38BDF8, #22D3EE)"
             },
             {
                 "id": "com.privacyvault.applock",
                 "name": "Privacy Vault – App Lock",
-                "desc": "Bảo vệ dữ liệu cá nhân và ngăn chặn truy cập trái phép với Privacy Vault. Công cụ bảo mật toàn diện này giúp bạn khóa các ứng dụng nhạy cảm, ẩn ảnh và video riêng tư, và bảo vệ thiết bị của bạn khỏi những kẻ tò mò.",
+                "desc": "Bảo vệ dữ liệu cá nhân, khóa các ứng dụng nhạy cảm, ẩn ảnh và video riêng tư khỏi những kẻ tò mò.",
                 "rating": "4.8",
                 "color": "linear-gradient(135deg, #10B981, #34D399)"
             },
             {
-                "id": "com.privacyvault.applock",
+                "id": "com.smartfactory.livewallpaper",
                 "name": "Live Wallpapers, 4K Wallpapers",
-                "desc": "Hình nền động 4K – Dynamic Theme thổi hồn vào màn hình chính của bạn với những hình nền chuyển động tuyệt đẹp ở chất lượng siêu sắc nét. Tận hưởng chuyển động mượt mà, dải màu rực rỡ, phong cách hiện đại và các hiệu ứng sống động được thiết kế để giúp điện thoại của bạn luôn nổi bật.",
-                "rating": "5",
+                "desc": "Hình nền động 4K thổi hồn vào màn hình chính với những chuyển động tuyệt đẹp ở chất lượng siêu sắc nét.",
+                "rating": "5.0",
+                "color": "linear-gradient(135deg, #818CF8, #6366F1)"
+            }
+        ]
+    },
+    "hi": {
+        "title": "शक्तिशाली उपकरण",
+        "subtitle": "हमारे ऐप्स के सुइट के साथ अपने मोबाइल अनुभव को बढ़ाएं।",
+        "get": "प्राप्त करें",
+        "apps": [
+            {
+                "id": "com.longtv.gamebooster",
+                "name": "Game Booster: Lag Fix & GFX",
+                "desc": "पिंग कम करें, नेटवर्क ऑप्टिमाइज़ करें और एक टैप से गेमिंग बढ़ाएं। बिना लैग के आसान गेमप्ले का आनंद लें।",
+                "rating": "4.7",
+                "color": "linear-gradient(135deg, #F43F5E, #FB7185)"
+            },
+            {
+                "id": "com.smartfactory.datasaverpro",
+                "name": "Data Saver Pro 3G 4G 5G",
+                "desc": "मोबाइल डेटा बचाएं और उन्नत संपीड़न तकनीक के साथ प्रभावी ढंग से उपयोग को नियंत्रित करें।",
+                "rating": "5.0",
+                "color": "linear-gradient(135deg, #38BDF8, #22D3EE)"
+            },
+            {
+                "id": "com.privacyvault.applock",
+                "name": "Privacy Vault – App Lock",
+                "desc": "अपने व्यक्तिगत डेटा और संवेदनशील ऐप्स की रक्षा करें। निजी फ़ोटो और वीडियो छुपाएं।",
+                "rating": "4.8",
                 "color": "linear-gradient(135deg, #10B981, #34D399)"
+            },
+            {
+                "id": "com.smartfactory.livewallpaper",
+                "name": "Live Wallpapers, 4K Wallpapers",
+                "desc": "अल्ट्रा-शार्प क्वालिटी में शानदार मूविंग वॉलपेपर के साथ अपनी होम स्क्रीन को जीवंत बनाएं।",
+                "rating": "5.0",
+                "color": "linear-gradient(135deg, #818CF8, #6366F1)"
+            }
+        ]
+    },
+    "id": {
+        "title": "Alat Kuat",
+        "subtitle": "Tingkatkan pengalaman seluler Anda dengan rangkaian aplikasi kami.",
+        "get": "DAPATKAN",
+        "apps": [
+            {
+                "id": "com.longtv.gamebooster",
+                "name": "Game Booster: Lag Fix & GFX",
+                "desc": "Kurangi ping, optimalkan jaringan, dan tingkatkan gaming satu ketuk. Nikmati gameplay mulus tanpa lag.",
+                "rating": "4.7",
+                "color": "linear-gradient(135deg, #F43F5E, #FB7185)"
+            },
+            {
+                "id": "com.smartfactory.datasaverpro",
+                "name": "Data Saver Pro 3G 4G 5G",
+                "desc": "Hemat data seluler dan kontrol penggunaan secara efektif dengan teknologi kompresi canggih.",
+                "rating": "5.0",
+                "color": "linear-gradient(135deg, #38BDF8, #22D3EE)"
+            },
+            {
+                "id": "com.privacyvault.applock",
+                "name": "Privacy Vault – App Lock",
+                "desc": "Lindungi data pribadi dan aplikasi sensitif Anda. Sembunyikan foto dan video pribadi.",
+                "rating": "4.8",
+                "color": "linear-gradient(135deg, #10B981, #34D399)"
+            },
+            {
+                "id": "com.smartfactory.livewallpaper",
+                "name": "Live Wallpapers, 4K Wallpapers",
+                "desc": "Hidupkan layar beranda Anda dengan wallpaper bergerak menakjubkan dalam kualitas ultra-tajam.",
+                "rating": "5.0",
+                "color": "linear-gradient(135deg, #818CF8, #6366F1)"
+            }
+        ]
+    },
+    "pt": {
+        "title": "Ferramentas Poderosas",
+        "subtitle": "Melhore sua experiência móvel com nossa suíte de aplicativos.",
+        "get": "BAIXAR",
+        "apps": [
+            {
+                "id": "com.longtv.gamebooster",
+                "name": "Game Booster: Lag Fix & GFX",
+                "desc": "Reduza o ping, otimize a rede e acelere seus jogos com um toque. Jogue sem lag agora.",
+                "rating": "4.7",
+                "color": "linear-gradient(135deg, #F43F5E, #FB7185)"
+            },
+            {
+                "id": "com.smartfactory.datasaverpro",
+                "name": "Data Saver Pro 3G 4G 5G",
+                "desc": "Poupe dados móveis e controle o uso de forma eficaz com tecnologia de compressão avançada.",
+                "rating": "5.0",
+                "color": "linear-gradient(135deg, #38BDF8, #22D3EE)"
+            },
+            {
+                "id": "com.privacyvault.applock",
+                "name": "Privacy Vault – App Lock",
+                "desc": "Proteja seus dados pessoais e apps sensíveis. Esconda fotos e vídeos privados.",
+                "rating": "4.8",
+                "color": "linear-gradient(135deg, #10B981, #34D399)"
+            },
+            {
+                "id": "com.smartfactory.livewallpaper",
+                "name": "Live Wallpapers, 4K Wallpapers",
+                "desc": "Dê vida à sua tela inicial com papéis de parede animados impressionantes em ultra qualidade.",
+                "rating": "5.0",
+                "color": "linear-gradient(135deg, #818CF8, #6366F1)"
+            }
+        ]
+    },
+    "ru": {
+        "title": "Мощные инструменты",
+        "subtitle": "Улучшите свой мобильный опыт с нашим набором приложений.",
+        "get": "СКАЧАТЬ",
+        "apps": [
+            {
+                "id": "com.longtv.gamebooster",
+                "name": "Game Booster: Lag Fix & GFX",
+                "desc": "Уменьшите пинг, оптимизируйте сеть и ускорьте игры одним нажатием. Играйте без лагов.",
+                "rating": "4.7",
+                "color": "linear-gradient(135deg, #F43F5E, #FB7185)"
+            },
+            {
+                "id": "com.smartfactory.datasaverpro",
+                "name": "Data Saver Pro 3G 4G 5G",
+                "desc": "Экономьте мобильный трафик и эффективно контролируйте расход с помощью передовых технологий.",
+                "rating": "5.0",
+                "color": "linear-gradient(135deg, #38BDF8, #22D3EE)"
+            },
+            {
+                "id": "com.privacyvault.applock",
+                "name": "Privacy Vault – App Lock",
+                "desc": "Защитите свои личные данные и конфиденциальные приложения. Скройте личные фото и видео.",
+                "rating": "4.8",
+                "color": "linear-gradient(135deg, #10B981, #34D399)"
+            },
+            {
+                "id": "com.smartfactory.livewallpaper",
+                "name": "Live Wallpapers, 4K Wallpapers",
+                "desc": "Оживите свой домашний экран потрясающими движущимися обоями в сверхчетком качестве.",
+                "rating": "5.0",
+                "color": "linear-gradient(135deg, #818CF8, #6366F1)"
+            }
+        ]
+    },
+    "tr": {
+        "title": "Güçlü Araçlar",
+        "subtitle": "Uygulama paketimizle mobil deneyiminizi geliştirin.",
+        "get": "İNDİR",
+        "apps": [
+            {
+                "id": "com.longtv.gamebooster",
+                "name": "Game Booster: Lag Fix & GFX",
+                "desc": "Pingi düşürün, ağı optimize edin ve tek dokunuşla oyunu hızlandırın. Kasmadan oynayın.",
+                "rating": "4.7",
+                "color": "linear-gradient(135deg, #F43F5E, #FB7185)"
+            },
+            {
+                "id": "com.smartfactory.datasaverpro",
+                "name": "Data Saver Pro 3G 4G 5G",
+                "desc": "Mobil veriden tasarruf edin ve gelişmiş sıkıştırma teknolojisiyle kullanımı kontrol edin.",
+                "rating": "5.0",
+                "color": "linear-gradient(135deg, #38BDF8, #22D3EE)"
+            },
+            {
+                "id": "com.privacyvault.applock",
+                "name": "Privacy Vault – App Lock",
+                "desc": "Kişisel verilerinizi ve hassas uygulamalarınızı koruyun. Özel fotoğrafları gizleyin.",
+                "rating": "4.8",
+                "color": "linear-gradient(135deg, #10B981, #34D399)"
+            },
+            {
+                "id": "com.smartfactory.livewallpaper",
+                "name": "Live Wallpapers, 4K Wallpapers",
+                "desc": "Süper keskin kalitede çarpıcı hareketli duvar kağıtlarıyla ana ekranınıza hayat verin.",
+                "rating": "5.0",
+                "color": "linear-gradient(135deg, #818CF8, #6366F1)"
+            }
+        ]
+    },
+    "th": {
+        "title": "เครื่องมือที่ทรงพลัง",
+        "subtitle": "ยกระดับประสบการณ์มือถือด้วยชุดแอปของเรา",
+        "get": "ดาวน์โหลด",
+        "apps": [
+            {
+                "id": "com.longtv.gamebooster",
+                "name": "Game Booster: Lag Fix & GFX",
+                "desc": "ลดปิง เพิ่มความเร็วเกมด้วยการแตะเพียงครั้งเดียว เล่นลื่นไม่มีสะดุด",
+                "rating": "4.7",
+                "color": "linear-gradient(135deg, #F43F5E, #FB7185)"
+            },
+            {
+                "id": "com.smartfactory.datasaverpro",
+                "name": "Data Saver Pro 3G 4G 5G",
+                "desc": "ประหยัดข้อมูลมือถือและควบคุมการใช้งานอย่างมีประสิทธิภาพด้วยเทคโนโลยีขั้นสูง",
+                "rating": "5.0",
+                "color": "linear-gradient(135deg, #38BDF8, #22D3EE)"
+            },
+            {
+                "id": "com.privacyvault.applock",
+                "name": "Privacy Vault – App Lock",
+                "desc": "ปกป้องข้อมูลส่วนตัว ล็อกแอปที่ละเอียดอ่อน ซ่อนรูปภาพและวิดีโอส่วนตัว",
+                "rating": "4.8",
+                "color": "linear-gradient(135deg, #10B981, #34D399)"
+            },
+            {
+                "id": "com.smartfactory.livewallpaper",
+                "name": "Live Wallpapers, 4K Wallpapers",
+                "desc": "ปลุกชีวิตหน้าจอหลักด้วยวอลเปเปอร์เคลื่อนไหวที่สวยงามในคุณภาพคมชัดระดับอัลตรา",
+                "rating": "5.0",
+                "color": "linear-gradient(135deg, #818CF8, #6366F1)"
+            }
+        ]
+    },
+    "de": {
+        "title": "Leistungsstarke Tools",
+        "subtitle": "Verbessern Sie Ihr mobiles Erlebnis mit unserer App-Suite.",
+        "get": "HOLEN",
+        "apps": [
+            {
+                "id": "com.longtv.gamebooster",
+                "name": "Game Booster: Lag Fix & GFX",
+                "desc": "Ping reduzieren, Netzwerk optimieren und Gaming-Performance steigern. Erleben Sie smootheres Gameplay ohne Lag.",
+                "rating": "4.7",
+                "color": "linear-gradient(135deg, #F43F5E, #FB7185)"
+            },
+            {
+                "id": "com.smartfactory.datasaverpro",
+                "name": "Data Saver Pro 3G 4G 5G",
+                "desc": "Sparen Sie mobile Daten und kontrollieren Sie den Verbrauch effektiv mit überlegener Komprimierungstechnologie.",
+                "rating": "5.0",
+                "color": "linear-gradient(135deg, #38BDF8, #22D3EE)"
+            },
+            {
+                "id": "com.privacyvault.applock",
+                "name": "Privacy Vault – App Lock",
+                "desc": "Schützen Sie Ihre persönlichen Daten und sperren Sie sensible Apps. Verstecken Sie Fotos und Videos vor Neugierigen.",
+                "rating": "4.8",
+                "color": "linear-gradient(135deg, #10B981, #34D399)"
+            },
+            {
+                "id": "com.smartfactory.livewallpaper",
+                "name": "Live Wallpapers, 4K Wallpapers",
+                "desc": "Haucht Ihrem Homescreen Leben ein mit atemberaubenden bewegten Hintergründen in ultrascharfer Qualität.",
+                "rating": "5.0",
+                "color": "linear-gradient(135deg, #818CF8, #6366F1)"
+            }
+        ]
+    },
+    "ja": {
+        "title": "強力なツール",
+        "subtitle": "当社のアプリスイートでモバイル体験を向上させましょう。",
+        "get": "入手",
+        "apps": [
+            {
+                "id": "com.longtv.gamebooster",
+                "name": "Game Booster: Lag Fix & GFX",
+                "desc": "ピンを減らし、ネットワークを最適化し、ワンタップでゲームを加速。ラグを完全に排除して最高の体験を。",
+                "rating": "4.7",
+                "color": "linear-gradient(135deg, #F43F5E, #FB7185)"
+            },
+            {
+                "id": "com.smartfactory.datasaverpro",
+                "name": "Data Saver Pro 3G 4G 5G",
+                "desc": "優れた圧縮技術でモバイルデータを節約し、使用量を効果的にコントロールします。",
+                "rating": "5.0",
+                "color": "linear-gradient(135deg, #38BDF8, #22D3EE)"
+            },
+            {
+                "id": "com.privacyvault.applock",
+                "name": "Privacy Vault – App Lock",
+                "desc": "個人データを保護し、機密アプリをロック。プライベートな写真や動画を好奇の目から守ります。",
+                "rating": "4.8",
+                "color": "linear-gradient(135deg, #10B981, #34D399)"
+            },
+            {
+                "id": "com.smartfactory.livewallpaper",
+                "name": "Live Wallpapers, 4K Wallpapers",
+                "desc": "超高精細な美しい動く壁紙でホーム画面に命を吹き込みます。鮮やかなエフェکتを。",
+                "rating": "5.0",
+                "color": "linear-gradient(135deg, #818CF8, #6366F1)"
+            }
+        ]
+    },
+    "ko": {
+        "title": "강력한 도구",
+        "subtitle": "우리 앱 스위트로 모바일 경험을 향상시키세요.",
+        "get": "받기",
+        "apps": [
+            {
+                "id": "com.longtv.gamebooster",
+                "name": "Game Booster: Lag Fix & GFX",
+                "desc": "핑 감소, 네트워크 최적화 및 한 번의 터치로 게임 속도 향상. 렉을 제거하여 최고의 게임 플레이를.",
+                "rating": "4.7",
+                "color": "linear-gradient(135deg, #F43F5E, #FB7185)"
+            },
+            {
+                "id": "com.smartfactory.datasaverpro",
+                "name": "Data Saver Pro 3G 4G 5G",
+                "desc": "우수한 압축 기술로 모바일 데이터를 절약하고 사용량을 효과적으로 제어합니다.",
+                "rating": "5.0",
+                "color": "linear-gradient(135deg, #38BDF8, #22D3EE)"
+            },
+            {
+                "id": "com.privacyvault.applock",
+                "name": "Privacy Vault – App Lock",
+                "desc": "개인 데이터를 보호하고 민감한 앱을 잠급니다. 개인 사진 및 비디오를 호기심 어린 시선으로부터 숨기세요.",
+                "rating": "4.8",
+                "color": "linear-gradient(135deg, #10B981, #34D399)"
+            },
+            {
+                "id": "com.smartfactory.livewallpaper",
+                "name": "Live Wallpapers, 4K Wallpapers",
+                "desc": "초고화질의 멋진 움직이는 월페이퍼로 홈 화면에 생명을 불어넣습니다. 휴대폰을 돋보이게.",
+                "rating": "5.0",
+                "color": "linear-gradient(135deg, #818CF8, #6366F1)"
+            }
+        ]
+    },
+    "nl": {
+        "title": "Krachtige Tools",
+        "subtitle": "Verbeter uw mobiele ervaring met onze app-suite.",
+        "get": "ONTDEK",
+        "apps": [
+            {
+                "id": "com.longtv.gamebooster",
+                "name": "Game Booster: Lag Fix & GFX",
+                "desc": "Verminder ping, optimaliseer netwerk en versnel gamen met één tik. Geniet van soepele gameplay zonder lag.",
+                "rating": "4.7",
+                "color": "linear-gradient(135deg, #F43F5E, #FB7185)"
+            },
+            {
+                "id": "com.smartfactory.datasaverpro",
+                "name": "Data Saver Pro 3G 4G 5G",
+                "desc": "Bespaar mobiele data en controleer het verbruik effectief met superieure compressietechnologie.",
+                "rating": "5.0",
+                "color": "linear-gradient(135deg, #38BDF8, #22D3EE)"
+            },
+            {
+                "id": "com.privacyvault.applock",
+                "name": "Privacy Vault – App Lock",
+                "desc": "Bescherm uw persoonlijke gegevens en vergrendel gevoelige apps tegen nieuwsgierige blikken.",
+                "rating": "4.8",
+                "color": "linear-gradient(135deg, #10B981, #34D399)"
+            },
+            {
+                "id": "com.smartfactory.livewallpaper",
+                "name": "Live Wallpapers, 4K Wallpapers",
+                "desc": "Breng uw startscherm tot leven met verbluffende beweegbare achtergronden in ultra-scherpe kwaliteit.",
+                "rating": "5.0",
+                "color": "linear-gradient(135deg, #818CF8, #6366F1)"
+            }
+        ]
+    },
+    "sv": {
+        "title": "Kraftfulla Verktyg",
+        "subtitle": "Förbättra din mobilupplevelse med vårt app-paket.",
+        "get": "HÄMTA",
+        "apps": [
+            {
+                "id": "com.longtv.gamebooster",
+                "name": "Game Booster: Lag Fix & GFX",
+                "desc": "Minska ping, optimera nätverket och snabba upp spelandet med ett tryck. Njut av smidigt spel utan lagg.",
+                "rating": "4.7",
+                "color": "linear-gradient(135deg, #F43F5E, #FB7185)"
+            },
+            {
+                "id": "com.smartfactory.datasaverpro",
+                "name": "Data Saver Pro 3G 4G 5G",
+                "desc": "Spara mobildata och kontrollera användningen effektivt med överlägsen komprimeringsteknik.",
+                "rating": "5.0",
+                "color": "linear-gradient(135deg, #38BDF8, #22D3EE)"
+            },
+            {
+                "id": "com.privacyvault.applock",
+                "name": "Privacy Vault – App Lock",
+                "desc": "Skydda dina personuppgifter och lås känsliga appar. Dölj privata foton och videor från nyfikna ögon.",
+                "rating": "4.8",
+                "color": "linear-gradient(135deg, #10B981, #34D399)"
+            },
+            {
+                "id": "com.smartfactory.livewallpaper",
+                "name": "Live Wallpapers, 4K Wallpapers",
+                "desc": "Ge din hemskärm liv med fantastiska rörliga bakgrunder i ultraskarp kvalitet.",
+                "rating": "5.0",
+                "color": "linear-gradient(135deg, #818CF8, #6366F1)"
+            }
+        ]
+    },
+    "no": {
+        "title": "Kraftige Verktøy",
+        "subtitle": "Forbedre mobilopplevelsen din med vår app-pakke.",
+        "get": "HENT",
+        "apps": [
+            {
+                "id": "com.longtv.gamebooster",
+                "name": "Game Booster: Lag Fix & GFX",
+                "desc": "Reduser ping, optimaliser nettverket og øk spillhastigheten med ett trykk. Nyt smidig spilling uten lag.",
+                "rating": "4.7",
+                "color": "linear-gradient(135deg, #F43F5E, #FB7185)"
+            },
+            {
+                "id": "com.smartfactory.datasaverpro",
+                "name": "Data Saver Pro 3G 4G 5G",
+                "desc": "Spar mobildata og kontroller bruken effektivt med overlegen komprimeringsteknologi.",
+                "rating": "5.0",
+                "color": "linear-gradient(135deg, #38BDF8, #22D3EE)"
+            },
+            {
+                "id": "com.privacyvault.applock",
+                "name": "Privacy Vault – App Lock",
+                "desc": "Beskytt dine personlige data og lås sensitive apper. Skjul private bilder og videoer for nysgjerrige øyne.",
+                "rating": "4.8",
+                "color": "linear-gradient(135deg, #10B981, #34D399)"
+            },
+            {
+                "id": "com.smartfactory.livewallpaper",
+                "name": "Live Wallpapers, 4K Wallpapers",
+                "desc": "Gi hjemskjermen din liv med fantastiske bevegelige bakgrunner i ultraskarp kvalitet.",
+                "rating": "5.0",
+                "color": "linear-gradient(135deg, #818CF8, #6366F1)"
+            }
+        ]
+    },
+    "da": {
+        "title": "Kraftfulde Værktøjer",
+        "subtitle": "Forbedr din mobiloplevelse med vores app-pakke.",
+        "get": "HENT",
+        "apps": [
+            {
+                "id": "com.longtv.gamebooster",
+                "name": "Game Booster: Lag Fix & GFX",
+                "desc": "Reducer ping, optimer netværket og gør spil hurtigere med ét tryk. Nyd problemfri gaming uden lag.",
+                "rating": "4.7",
+                "color": "linear-gradient(135deg, #F43F5E, #FB7185)"
+            },
+            {
+                "id": "com.smartfactory.datasaverpro",
+                "name": "Data Saver Pro 3G 4G 5G",
+                "desc": "Spar mobildata og kontroller forbruget effektivt med overlegen komprimeringsteknologi.",
+                "rating": "5.0",
+                "color": "linear-gradient(135deg, #38BDF8, #22D3EE)"
+            },
+            {
+                "id": "com.privacyvault.applock",
+                "name": "Privacy Vault – App Lock",
+                "desc": "Beskyt dine personlige data og lås følsomme apps. Skjul private fotos og videoer fra nysgerrige øjne.",
+                "rating": "4.8",
+                "color": "linear-gradient(135deg, #10B981, #34D399)"
+            },
+            {
+                "id": "com.smartfactory.livewallpaper",
+                "name": "Live Wallpapers, 4K Wallpapers",
+                "desc": "Gør din startskærm levende with fantastiske animerede baggrunde i ultra-skarp kvalitet.",
+                "rating": "5.0",
+                "color": "linear-gradient(135deg, #818CF8, #6366F1)"
+            }
+        ]
+    },
+    "fr": {
+        "title": "Outils Puissants",
+        "subtitle": "Améliorez votre expérience mobile với notre suite d'applications.",
+        "get": "OBTENIR",
+        "apps": [
+            {
+                "id": "com.longtv.gamebooster",
+                "name": "Game Booster: Lag Fix & GFX",
+                "desc": "Réduisez le ping, optimisez le réseau et accélérez les jeux. Profitez d'une expérience de jeu plus fluide sans lag.",
+                "rating": "4.7",
+                "color": "linear-gradient(135deg, #F43F5E, #FB7185)"
+            },
+            {
+                "id": "com.smartfactory.datasaverpro",
+                "name": "Data Saver Pro 3G 4G 5G",
+                "desc": "Économisez des données mobiles et contrôlez la consommation grâce à une technologie de compression supérieure.",
+                "rating": "5.0",
+                "color": "linear-gradient(135deg, #38BDF8, #22D3EE)"
+            },
+            {
+                "id": "com.privacyvault.applock",
+                "name": "Privacy Vault – App Lock",
+                "desc": "Protégez vos données personnelles et verrouillez les apps sensibles. Masquez photos et vidéos des regards indiscrets.",
+                "rating": "4.8",
+                "color": "linear-gradient(135deg, #10B981, #34D399)"
+            },
+            {
+                "id": "com.smartfactory.livewallpaper",
+                "name": "Live Wallpapers, 4K Wallpapers",
+                "desc": "Donne vie à votre écran d'accueil với des fonds animés magnifiques en qualité ultra nette.",
+                "rating": "5.0",
+                "color": "linear-gradient(135deg, #818CF8, #6366F1)"
+            }
+        ]
+    },
+    "es": {
+        "title": "Herramientas Potentes",
+        "subtitle": "Mejora tu experiencia móvil với nuestra suite de aplicaciones.",
+        "get": "OBTENER",
+        "apps": [
+            {
+                "id": "com.longtv.gamebooster",
+                "name": "Game Booster: Lag Fix & GFX",
+                "desc": "Reduce el ping, optimiza la red y acelera los juegos. Disfruta de un juego más fluido sin lag.",
+                "rating": "4.7",
+                "color": "linear-gradient(135deg, #F43F5E, #FB7185)"
+            },
+            {
+                "id": "com.smartfactory.datasaverpro",
+                "name": "Data Saver Pro 3G 4G 5G",
+                "desc": "Ahorra datos móviles và controla el consumo de manera efectiva với tecnología de compresión superior.",
+                "rating": "5.0",
+                "color": "linear-gradient(135deg, #38BDF8, #22D3EE)"
+            },
+            {
+                "id": "com.privacyvault.applock",
+                "name": "Privacy Vault – App Lock",
+                "desc": "Protege tus datos personales y bloquea apps sensibles. Oculta fotos y videos de miradas indiscretas.",
+                "rating": "4.8",
+                "color": "linear-gradient(135deg, #10B981, #34D399)"
+            },
+            {
+                "id": "com.smartfactory.livewallpaper",
+                "name": "Live Wallpapers, 4K Wallpapers",
+                "desc": "Da vida a tu pantalla de inicio với fondos animados impresionantes en calidad ultra nítida.",
+                "rating": "5.0",
+                "color": "linear-gradient(135deg, #818CF8, #6366F1)"
+            }
+        ]
+    },
+    "it": {
+        "title": "Strumenti Potenti",
+        "subtitle": "Migliora la tua esperienza mobile với la nostra suite di app.",
+        "get": "OTTENERE",
+        "apps": [
+            {
+                "id": "com.longtv.gamebooster",
+                "name": "Game Booster: Lag Fix & GFX",
+                "desc": "Riduci il ping, ottimizza la rete e accelera i giochi. Goditi un gameplay più fluido senza lag.",
+                "rating": "4.7",
+                "color": "linear-gradient(135deg, #F43F5E, #FB7185)"
+            },
+            {
+                "id": "com.smartfactory.datasaverpro",
+                "name": "Data Saver Pro 3G 4G 5G",
+                "desc": "Risparmia dati mobili e controlla efficacemente il consumo với tecnologia di compressione superiore.",
+                "rating": "5.0",
+                "color": "linear-gradient(135deg, #38BDF8, #22D3EE)"
+            },
+            {
+                "id": "com.privacyvault.applock",
+                "name": "Privacy Vault – App Lock",
+                "desc": "Proteggi i tuoi dati personali e blocca le app sensibili. Nascondi foto e video da occhi indiscreti.",
+                "rating": "4.8",
+                "color": "linear-gradient(135deg, #10B981, #34D399)"
+            },
+            {
+                "id": "com.smartfactory.livewallpaper",
+                "name": "Live Wallpapers, 4K Wallpapers",
+                "desc": "Dà vita alla tua schermata home với sfondi in movimento mozzafiato in qualità ultra nitida.",
+                "rating": "5.0",
+                "color": "linear-gradient(135deg, #818CF8, #6366F1)"
             }
         ]
     }
