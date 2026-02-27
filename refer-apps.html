@@ -14,7 +14,6 @@
             --text-secondary: #94A3B8;
             --accent-cyan: #22D3EE;
             --accent-indigo: #818CF8;
-            --accent-rose: #F43F5E;
         }
 
         * {
@@ -29,7 +28,9 @@
             background-color: var(--bg-color);
             color: var(--text-primary);
             padding: 24px 16px;
-            overflow-x: hidden;
+            opacity: 0;
+            /* Hiện sau khi load ngôn ngữ */
+            transition: opacity 0.3s ease;
         }
 
         .header {
@@ -64,31 +65,18 @@
             align-items: center;
             text-decoration: none;
             color: inherit;
-            transition: transform 0.2s ease, background 0.2s ease;
             backdrop-filter: blur(10px);
-        }
-
-        .app-card:active {
-            transform: scale(0.97);
-            background: rgba(30, 41, 59, 0.9);
         }
 
         .app-icon {
             width: 64px;
             height: 64px;
             border-radius: 16px;
-            background: linear-gradient(135deg, var(--accent-indigo), var(--accent-cyan));
             display: flex;
             align-items: center;
             justify-content: center;
             margin-right: 16px;
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-        }
-
-        .app-icon img {
-            width: 40px;
-            height: 40px;
-            filter: brightness(0) invert(1);
         }
 
         .app-info {
@@ -125,14 +113,12 @@
         .download-btn {
             background: linear-gradient(90deg, #38BDF8, #818CF8);
             color: white;
-            padding: 8px 20px;
+            padding: 6px 16px;
             border-radius: 20px;
-            font-size: 13px;
+            font-size: 12px;
             font-weight: 600;
-            box-shadow: 0 4px 12px rgba(56, 189, 248, 0.3);
         }
 
-        /* Specific Icon Gradients */
         .color-1 {
             background: linear-gradient(135deg, #F43F5E, #FB7185);
         }
@@ -154,12 +140,12 @@
 <body>
 
     <div class="header">
-        <h1>Our Powerful Tools</h1>
-        <p>Enhance your mobile experience with our suite.</p>
+        <h1 data-i18n="title">Our Powerful Tools</h1>
+        <p data-i18n="subtitle">Enhance your mobile experience with our suite.</p>
     </div>
 
     <div class="apps-container">
-        <!-- App Lock Pro -->
+        <!-- App Lock -->
         <a href="market://details?id=com.smartfactory.applock" class="app-card">
             <div class="app-icon color-1">
                 <svg width="32" height="32" viewBox="0 0 24 24" fill="white">
@@ -168,16 +154,16 @@
                 </svg>
             </div>
             <div class="app-info">
-                <div class="app-name">App Lock Pro</div>
-                <div class="app-desc">Secure your photos, videos, and social apps with fingerprint lock.</div>
+                <div class="app-name" data-i18n="app_lock_title">App Lock Pro</div>
+                <div class="app-desc" data-i18n="app_lock_desc">Secure your photos...</div>
                 <div class="app-meta">
                     <div class="rating">★ 4.9</div>
-                    <div class="download-btn">GET</div>
+                    <div class="download-btn" data-i18n="get">GET</div>
                 </div>
             </div>
         </a>
 
-        <!-- Dual App Cloner -->
+        <!-- Cloner -->
         <a href="market://details?id=com.smartfactory.cloner" class="app-card">
             <div class="app-icon color-2">
                 <svg width="32" height="32" viewBox="0 0 24 24" fill="white">
@@ -186,16 +172,16 @@
                 </svg>
             </div>
             <div class="app-info">
-                <div class="app-name">Dual App Cloner</div>
-                <div class="app-desc">Run multiple accounts of the same app simultaneously.</div>
+                <div class="app-name" data-i18n="cloner_title">Dual App Cloner</div>
+                <div class="app-desc" data-i18n="cloner_desc">Run multiple accounts...</div>
                 <div class="app-meta">
                     <div class="rating">★ 4.8</div>
-                    <div class="download-btn">GET</div>
+                    <div class="download-btn" data-i18n="get">GET</div>
                 </div>
             </div>
         </a>
 
-        <!-- Battery Saver & Dr.Phone -->
+        <!-- Data Saver -->
         <a href="market://details?id=com.smartfactory.datasaver" class="app-card">
             <div class="app-icon color-3">
                 <svg width="32" height="32" viewBox="0 0 24 24" fill="white">
@@ -204,16 +190,16 @@
                 </svg>
             </div>
             <div class="app-info">
-                <div class="app-name">Data Saver Pro</div>
-                <div class="app-desc">Monitor mobile data usage and save battery life.</div>
+                <div class="app-name" data-i18n="data_saver_title">Data Saver Pro</div>
+                <div class="app-desc" data-i18n="data_saver_desc">Monitor usage...</div>
                 <div class="app-meta">
                     <div class="rating">★ 4.7</div>
-                    <div class="download-btn">GET</div>
+                    <div class="download-btn" data-i18n="get">GET</div>
                 </div>
             </div>
         </a>
 
-        <!-- Net Health Analyzer -->
+        <!-- Net Health -->
         <a href="market://details?id=com.smartfactory.nethealth" class="app-card">
             <div class="app-icon color-4">
                 <svg width="32" height="32" viewBox="0 0 24 24" fill="white">
@@ -222,19 +208,34 @@
                 </svg>
             </div>
             <div class="app-info">
-                <div class="app-name">Net Health</div>
-                <div class="app-desc">Check your network stability and speed in real-time.</div>
+                <div class="app-name" data-i18n="net_health_title">Net Health</div>
+                <div class="app-desc" data-i18n="net_health_desc">Check network...</div>
                 <div class="app-meta">
                     <div class="rating">★ 4.8</div>
-                    <div class="download-btn">GET</div>
+                    <div class="download-btn" data-i18n="get">GET</div>
                 </div>
             </div>
         </a>
     </div>
 
     <script>
-        // Optional: Analytics or interaction logic
-        console.log("Featured Apps Loaded");
+        const urlParams = new URLSearchParams(window.location.search);
+        const lang = urlParams.get('lang') || 'en';
+
+        // Load translations
+        fetch('translations.json')
+            .then(response => response.json())
+            .then(data => {
+                const i18n = data[lang] || data['en'];
+                document.querySelectorAll('[data-i18n]').forEach(el => {
+                    const key = el.getAttribute('data-i18n');
+                    if (i18n[key]) el.innerText = i18n[key];
+                });
+                document.body.style.opacity = 1;
+            })
+            .catch(() => {
+                document.body.style.opacity = 1;
+            });
     </script>
 </body>
 
