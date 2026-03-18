@@ -1,0 +1,30 @@
+{
+  "com.smartfactory.batteryhealth.pro": [
+    {
+      "name": "Data Saver Pro 3G 4G 5G",
+      "dev": "Zubbly Studio",
+      "iconUrl": "https://truongvanlongofficial.github.io/public-website-io/icons/datasaver.png",
+      "packageName": "com.zubbly.datasaverpro",
+      "backgroundColor": "#1E293B",
+      "primaryColor": "#39FF14"
+    },
+    {
+      "name": "Super Cleaner Pro",
+      "dev": "Smart Factory",
+      "iconUrl": "https://truongvanlongofficial.github.io/public-website-io/icons/cleaner.png",
+      "packageName": "com.smartfactory.cleaner",
+      "backgroundColor": "#1A1E1C",
+      "primaryColor": "#38BDF8"
+    }
+  ],
+  "com.smartfactory.datasaver": [
+    {
+      "name": "Battery Health Pro",
+      "dev": "Smart Factory",
+      "iconUrl": "https://truongvanlongofficial.github.io/public-website-io/icons/battery.png",
+      "packageName": "com.smartfactory.batteryhealth.pro",
+      "backgroundColor": "#111512",
+      "primaryColor": "#39FF14"
+    }
+  ]
+}
