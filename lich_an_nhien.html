@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy | Lich An Nhien</title>
+  <meta
+    name="description"
+    content="Chinh sach bao mat cua ung dung Lich An Nhien tren Android."
+  />
+  <style>
+    :root {
+      --bg: #07131b;
+      --panel: #102330;
+      --panel-2: #132632;
+      --text: #f5fbff;
+      --muted: #b6cbd9;
+      --line: rgba(255, 255, 255, 0.12);
+      --accent: #7dd3fc;
+      --accent-2: #f2c572;
+      --ok: #4ade80;
+      --shadow: 0 24px 64px rgba(0, 0, 0, 0.28);
+      --radius: 24px;
+      --max: 920px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top right, rgba(125, 211, 252, 0.14), transparent 30%),
+        radial-gradient(circle at left 20%, rgba(242, 197, 114, 0.10), transparent 24%),
+        linear-gradient(180deg, #0d2230 0%, var(--bg) 42%, #06121a 100%);
+      min-height: 100vh;
+    }
+
+    .wrap {
+      width: min(calc(100% - 32px), var(--max));
+      margin: 0 auto;
+      padding: 32px 0 72px;
+    }
+
+    .hero,
+    .card {
+      background: linear-gradient(180deg, rgba(19, 38, 50, 0.98), rgba(16, 35, 48, 0.96));
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .hero {
+      padding: 32px 28px;
+      margin-bottom: 24px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at top left, rgba(125, 211, 252, 0.16), transparent 38%);
+      pointer-events: none;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(125, 211, 252, 0.18);
+      background: rgba(125, 211, 252, 0.10);
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3 {
+      margin: 0;
+      line-height: 1.2;
+    }
+
+    h1 {
+      margin-top: 18px;
+      font-size: clamp(32px, 5vw, 46px);
+      font-weight: 800;
+    }
+
+    .lead {
+      margin: 16px 0 0;
+      max-width: 760px;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .meta {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .grid {
+      display: grid;
+      gap: 18px;
+    }
+
+    .card {
+      padding: 24px;
+    }
+
+    .card + .card {
+      margin-top: 18px;
+    }
+
+    h2 {
+      font-size: 24px;
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
+
+    h3 {
+      font-size: 18px;
+      font-weight: 700;
+      margin: 20px 0 8px;
+      color: var(--accent-2);
+    }
+
+    p {
+      margin: 10px 0 0;
+    }
+
+    ul {
+      margin: 12px 0 0;
+      padding-left: 20px;
+    }
+
+    li + li {
+      margin-top: 8px;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    .notice {
+      border-left: 4px solid var(--accent-2);
+      padding: 14px 16px;
+      border-radius: 16px;
+      background: rgba(242, 197, 114, 0.08);
+      color: #f9e5ba;
+      margin-top: 16px;
+    }
+
+    .ok-box {
+      border-left: 4px solid var(--ok);
+      padding: 14px 16px;
+      border-radius: 16px;
+      background: rgba(74, 222, 128, 0.08);
+      color: #d6f9e1;
+      margin-top: 16px;
+    }
+
+    .toc {
+      display: grid;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .toc a {
+      display: block;
+      text-decoration: none;
+      color: var(--text);
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 12px 14px;
+    }
+
+    .small {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    footer {
+      margin-top: 22px;
+      color: var(--muted);
+      font-size: 14px;
+      text-align: center;
+    }
+
+    @media (max-width: 640px) {
+      .wrap {
+        width: min(calc(100% - 20px), var(--max));
+        padding-top: 20px;
+        padding-bottom: 40px;
+      }
+
+      .hero,
+      .card {
+        padding: 20px;
+        border-radius: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <div class="eyebrow">Privacy Policy</div>
+      <h1>Chính Sách Bảo Mật của Lịch An Nhiên</h1>
+      <p class="lead">
+        Chính sách này mô tả cách ứng dụng <strong>Lịch An Nhiên</strong> xử lý dữ liệu khi bạn sử dụng ứng dụng Android, bao gồm dữ liệu bạn tự nhập, quyền ứng dụng và dịch vụ bên thứ ba có thể được tích hợp.
+      </p>
+      <p class="meta">
+        Hiệu lực từ: <strong>22/03/2026</strong>
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Mục lục</h2>
+      <div class="toc">
+        <a href="#scope">1. Phạm vi áp dụng</a>
+        <a href="#collect">2. Dữ liệu chúng tôi xử lý</a>
+        <a href="#permissions">3. Quyền ứng dụng</a>
+        <a href="#ads">4. Quảng cáo và dịch vụ bên thứ ba</a>
+        <a href="#storage">5. Lưu trữ, sao lưu và bảo mật dữ liệu</a>
+        <a href="#sharing">6. Chia sẻ dữ liệu</a>
+        <a href="#rights">7. Quyền và lựa chọn của bạn</a>
+        <a href="#children">8. Trẻ em</a>
+        <a href="#changes">9. Thay đổi chính sách</a>
+        <a href="#contact">10. Liên hệ</a>
+      </div>
+    </section>
+
+    <section class="card" id="scope">
+      <h2>1. Phạm vi áp dụng</h2>
+      <p>
+        Chính sách này áp dụng cho ứng dụng Android <strong>Lịch An Nhiên</strong>, một ứng dụng lịch âm dương và tiện ích tra cứu ngày, giờ, phong thủy, lời khuyên tham khảo và nhắc lịch.
+      </p>
+      <p>
+        Ứng dụng hiện không yêu cầu bạn tạo tài khoản đăng nhập để sử dụng các tính năng chính. Phần lớn dữ liệu do người dùng nhập được lưu cục bộ trên thiết bị của người dùng.
+      </p>
+    </section>
+
+    <section class="card" id="collect">
+      <h2>2. Dữ liệu chúng tôi xử lý</h2>
+
+      <h3>2.1 Dữ liệu bạn chủ động cung cấp</h3>
+      <p>
+        Khi bạn sử dụng tính năng <strong>nhắc lịch</strong>, ứng dụng có thể lưu các thông tin do bạn tự nhập hoặc tự chọn, bao gồm:
+      </p>
+      <ul>
+        <li>Tiêu đề nhắc lịch.</li>
+        <li>Loại lịch bạn chọn: dương lịch hoặc âm lịch.</li>
+        <li>Ngày, tháng, năm liên quan đến nhắc lịch.</li>
+        <li>Giờ và phút nhắc.</li>
+        <li>Kiểu lặp lại, ví dụ: một lần hoặc hằng năm.</li>
+        <li>Thời điểm tạo dữ liệu nhắc lịch.</li>
+      </ul>
+      <p>
+        Theo phần triển khai hiện tại của ứng dụng, các dữ liệu trên được lưu trong cơ sở dữ liệu cục bộ trên thiết bị để phục vụ hiển thị, chỉnh sửa, xóa và lên lịch thông báo.
+      </p>
+
+      <h3>2.2 Dữ liệu kỹ thuật hoặc dữ liệu do dịch vụ bên thứ ba xử lý</h3>
+      <p>
+        Ứng dụng có thể tích hợp <strong>Google Mobile Ads (AdMob)</strong> để hiển thị quảng cáo. Khi đó, Google và các đối tác quảng cáo của Google có thể xử lý một số dữ liệu kỹ thuật hoặc định danh thiết bị theo chính sách của họ, chẳng hạn như:
+      </p>
+      <ul>
+        <li>Thông tin thiết bị và ứng dụng.</li>
+        <li>Địa chỉ IP, mã nhận dạng quảng cáo hoặc mã định danh trực tuyến tương tự, nếu được hệ điều hành hoặc SDK cung cấp.</li>
+        <li>Thông tin liên quan đến hiệu suất quảng cáo, chống gian lận, đo lường và phân phối quảng cáo.</li>
+      </ul>
+      <p>
+        Nhà phát triển ứng dụng không nhất thiết truy cập trực tiếp tất cả các dữ liệu kỹ thuật mà SDK quảng cáo có thể xử lý. Việc xử lý này tuân theo cơ chế và chính sách riêng của Google.
+      </p>
+
+      <h3>2.3 Dữ liệu ứng dụng không yêu cầu trực tiếp</h3>
+      <p>
+        Theo mã nguồn hiện tại, ứng dụng không yêu cầu trực tiếp các quyền như danh bạ, vị trí chính xác, máy ảnh, micro hoặc thư viện ảnh để cung cấp các tính năng chính.
+      </p>
+
+      <div class="ok-box">
+        <strong>Tóm tắt:</strong> Dữ liệu người dùng do ứng dụng tự quản lý chủ yếu là dữ liệu nhắc lịch lưu trên thiết bị. Ứng dụng cũng có thể sử dụng SDK quảng cáo của Google, và dữ liệu kỹ thuật có thể được Google xử lý theo chính sách riêng của Google.
+      </div>
+    </section>
+
+    <section class="card" id="permissions">
+      <h2>3. Quyền ứng dụng</h2>
+      <p>
+        Ứng dụng hiện sử dụng hoặc có thể yêu cầu quyền sau:
+      </p>
+      <ul>
+        <li><strong>POST_NOTIFICATIONS</strong>: dùng để hiển thị thông báo nhắc lịch nếu bạn bật quyền thông báo trên thiết bị.</li>
+      </ul>
+      <p>
+        Nếu bạn không cấp quyền thông báo, ứng dụng vẫn có thể lưu dữ liệu nhắc lịch trên thiết bị, nhưng thông báo nhắc có thể không hiển thị.
+      </p>
+    </section>
+
+    <section class="card" id="ads">
+      <h2>4. Quảng cáo và dịch vụ bên thứ ba</h2>
+      <p>
+        Ứng dụng có thể sử dụng các dịch vụ của Google để hiển thị quảng cáo, bao gồm <strong>Google Mobile Ads (AdMob)</strong>.
+      </p>
+      <p>
+        Các dịch vụ bên thứ ba này có thể thu thập và xử lý dữ liệu theo chính sách riêng của họ. Bạn nên tham khảo trực tiếp:
+      </p>
+      <ul>
+        <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Chính sách quyền riêng tư của Google</a></li>
+        <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener noreferrer">Thông tin về AdMob và dữ liệu người dùng</a></li>
+      </ul>
+      <p>
+        Nếu bạn phát hành ứng dụng có quảng cáo, bạn cũng cần bảo đảm phần khai báo trong Play Console phản ánh đúng việc sử dụng SDK quảng cáo và dữ liệu liên quan.
+      </p>
+      <div class="notice">
+        Ứng dụng nên chỉ hiển thị quảng cáo và sử dụng các cấu hình quảng cáo phù hợp với pháp luật áp dụng, cài đặt đồng ý của người dùng và yêu cầu của Google Play.
+      </div>
+    </section>
+
+    <section class="card" id="storage">
+      <h2>5. Lưu trữ, sao lưu và bảo mật dữ liệu</h2>
+
+      <h3>5.1 Lưu trữ cục bộ trên thiết bị</h3>
+      <p>
+        Dữ liệu nhắc lịch do bạn tạo được lưu cục bộ trên thiết bị bằng cơ sở dữ liệu nội bộ của ứng dụng. Dữ liệu này được dùng để:
+      </p>
+      <ul>
+        <li>Hiển thị danh sách nhắc lịch.</li>
+        <li>Cho phép bạn chỉnh sửa hoặc xóa nhắc lịch.</li>
+        <li>Lên lịch thông báo cục bộ trên thiết bị.</li>
+      </ul>
+
+      <h3>5.2 Sao lưu và chuyển thiết bị</h3>
+      <p>
+        Tùy vào cài đặt hệ điều hành Android, dữ liệu ứng dụng có thể được hệ thống sao lưu hoặc khôi phục trong quá trình đồng bộ, khôi phục thiết bị hoặc chuyển dữ liệu sang thiết bị mới. Việc sao lưu hoặc khôi phục như vậy do Android và tài khoản dịch vụ liên quan của người dùng quản lý.
+      </p>
+
+      <h3>5.3 Bảo mật</h3>
+      <p>
+        Chúng tôi cố gắng giới hạn việc xử lý dữ liệu ở mức cần thiết cho chức năng của ứng dụng. Tuy nhiên, không có phương thức lưu trữ điện tử hoặc truyền dữ liệu nào bảo đảm an toàn tuyệt đối. Bạn nên bảo vệ thiết bị của mình bằng khóa màn hình, cập nhật hệ điều hành thường xuyên và chỉ cài đặt ứng dụng từ nguồn đáng tin cậy.
+      </p>
+    </section>
+
+    <section class="card" id="sharing">
+      <h2>6. Chia sẻ dữ liệu</h2>
+      <p>
+        Chúng tôi không bán dữ liệu cá nhân do bạn nhập trực tiếp vào ứng dụng.
+      </p>
+      <p>
+        Dữ liệu có thể được chia sẻ hoặc xử lý trong các trường hợp sau:
+      </p>
+      <ul>
+        <li><strong>Dịch vụ quảng cáo bên thứ ba:</strong> ví dụ Google AdMob, để phân phối và đo lường quảng cáo.</li>
+        <li><strong>Yêu cầu pháp lý:</strong> nếu pháp luật yêu cầu tiết lộ thông tin hoặc khi cần thiết để bảo vệ quyền, an toàn hoặc tuân thủ nghĩa vụ pháp lý.</li>
+        <li><strong>Tính năng hệ điều hành:</strong> ví dụ sao lưu hoặc khôi phục dữ liệu qua Android, nếu người dùng bật các tính năng đó trên thiết bị.</li>
+      </ul>
+    </section>
+
+    <section class="card" id="rights">
+      <h2>7. Quyền và lựa chọn của bạn</h2>
+      <ul>
+        <li>Bạn có thể chỉnh sửa hoặc xóa nhắc lịch trực tiếp trong ứng dụng.</li>
+        <li>Bạn có thể tắt quyền thông báo trong phần cài đặt của Android nếu không muốn nhận nhắc lịch.</li>
+        <li>Bạn có thể xóa dữ liệu ứng dụng khỏi thiết bị bằng cách gỡ cài đặt ứng dụng hoặc xóa dữ liệu ứng dụng trong phần cài đặt hệ thống.</li>
+        <li>Bạn có thể quản lý một số tùy chọn quảng cáo trong cài đặt tài khoản hoặc cài đặt quảng cáo của Google, tùy theo khu vực và thiết bị.</li>
+      </ul>
+    </section>
+
+    <section class="card" id="children">
+      <h2>8. Trẻ em</h2>
+      <p>
+        Ứng dụng không được thiết kế chuyên biệt cho trẻ em và không cố ý thu thập dữ liệu cá nhân của trẻ em theo cách trái với pháp luật áp dụng. Nếu bạn cho rằng một dữ liệu không phù hợp đã được xử lý, vui lòng liên hệ với nhà phát triển qua kênh liên hệ được công bố cho ứng dụng.
+      </p>
+    </section>
+
+    <section class="card" id="changes">
+      <h2>9. Thay đổi chính sách</h2>
+      <p>
+        Chúng tôi có thể cập nhật Chính Sách Bảo Mật này khi ứng dụng thay đổi tính năng, thay đổi nhà cung cấp dịch vụ, hoặc khi có yêu cầu pháp lý hoặc chính sách nền tảng mới. Khi cập nhật, chúng tôi sẽ sửa ngày hiệu lực ở đầu tài liệu này.
+      </p>
+    </section>
+
+    <section class="card" id="contact">
+      <h2>10. Liên hệ</h2>
+      <p>
+        Nếu bạn có câu hỏi, yêu cầu hoặc khiếu nại liên quan đến quyền riêng tư và dữ liệu người dùng của <strong>Lịch An Nhiên</strong>, vui lòng liên hệ với nhà phát triển thông qua thông tin liên hệ được công bố trên trang ứng dụng trong Google Play.
+      </p>
+      <p class="small">
+        Trước khi gửi ứng dụng lên Google Play, bạn nên bảo đảm mục liên hệ của nhà phát triển trong Play Console đã được điền đầy đủ và chính xác để người dùng có thể gửi yêu cầu về quyền riêng tư khi cần.
+      </p>
+    </section>
+
+    <footer>
+      © 2026 Lịch An Nhiên. Tài liệu này được xuất bản để dùng cho trang chính sách quyền riêng tư của ứng dụng.
+    </footer>
+  </main>
+</body>
+</html>
