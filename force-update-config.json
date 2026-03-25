@@ -1,0 +1,16 @@
+{
+  "com.smartfactory.datasaverpro": {
+    "enabled": true,
+    "stableVersionCode": 16,
+    "stableVersionName": "1.2",
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.smartfactory.datasaverpro",
+    "title": "Update required",
+    "message": "Please update Data Saver Pro to the latest stable version to continue using the app."
+  },
+  "com.smartfactory.noticlean": {
+    "enabled": true,
+    "stableVersionCode": 5,
+    "stableVersionName": "1.0.4",
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.smartfactory.noticlean"
+  }
+}
