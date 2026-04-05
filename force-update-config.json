@@ -71,7 +71,7 @@
   },
     "com.longtv.gamebooster": {
     "enabled": true,
-    "stableVersionCode": 24,
+    "stableVersionCode": 28,
     "stableVersionName": "1.0.3",
     "playStoreUrl": "https://play.google.com/store/apps/details?id=com.longtv.gamebooster",
     "title": {
