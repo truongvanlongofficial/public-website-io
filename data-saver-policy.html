@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Data Saver Pro</title>
+    <title>Privacy Policy - Mobile Data Usage Monitor</title>
     <style>
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -41,6 +41,13 @@
             padding-left: 15px;
         }
 
+        h3 {
+            color: #2d3748;
+            font-size: 1.1rem;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
         p {
             margin-bottom: 1.25rem;
         }
@@ -70,110 +77,115 @@
             border-top: 1px solid #e2e8f0;
             padding-top: 20px;
         }
-
-        .important {
-            color: #c53030;
-            font-weight: bold;
-        }
     </style>
 </head>
 
 <body>
     <div class="container">
         <h1>Privacy Policy</h1>
-        <p><strong>Effective Date: December 31, 2025</strong></p>
+        <p><strong>Effective Date: April 11, 2026</strong></p>
 
-        <p>Welcome to <strong>Data Saver Pro</strong> ("we," "our," or "us"). We respect your privacy and are committed
-            to protecting it through our compliance with this policy. This Privacy Policy describes the types of
-            information we may collect from you or that you may provide when you use our mobile application (the "App")
-            and our practices for collecting, using, maintaining, protecting, and disclosing that information.</p>
+        <p>Welcome to <strong>Mobile Data Usage Monitor</strong> ("we," "our," or "us"). We respect your privacy and
+            are committed to protecting it. This Privacy Policy explains what information may be processed when you use
+            our mobile application (the "App"), how that information is used, and the choices available to you.</p>
 
         <div class="highlight-box">
-            <strong>Core Functionality Disclosure:</strong> Data Saver Pro uses the Android <strong>VpnService</strong>
-            to create a local-only VPN tunnel. This is the main purpose of our App, allowing us to monitor and optimize
-            your data usage in real-time. This tunnel operates entirely on your device and <strong>DOES NOT</strong>
-            redirect your traffic to any remote servers.
+            <strong>Core Functionality Disclosure:</strong> Mobile Data Usage Monitor may use the Android
+            <strong>VpnService</strong> framework to create a local VPN interface on your device after you grant
+            permission. This local VPN interface is used to support on-device network monitoring features inside the
+            App. It is not intended to route your traffic through remote servers controlled by us.
         </div>
 
-        <h2>1. VpnService Requirements & Usage</h2>
-        <p>In compliance with the Google Play VpnService Policy, we declare the following:</p>
+        <h2>1. How the App Uses VpnService</h2>
+        <p>In compliance with Google Play requirements for apps that use VpnService, we disclose the following:</p>
         <ul>
-            <li><strong>Purpose:</strong> To track real-time data consumption per application and provide data saving
-                visualizations.</li>
-            <li><strong>Local Processing:</strong> All network traffic analysis is performed locally on your device. We
-                do not inspect, collect, or store the content of your communications.</li>
-            <li><strong>Privacy:</strong> We do not redirect or manipulate user traffic from other apps for monetization
-                purposes.</li>
-            <li><strong>Transparency:</strong> The VPN is only activated after you provide explicit consent by tapping
-                the "Start Data Saving" button and accepting the system VPN dialog.</li>
+            <li><strong>Purpose:</strong> To support on-device network monitoring features, app activity visibility,
+                and usage-related tools available inside the App.</li>
+            <li><strong>Local Processing:</strong> Network activity related to these features is processed on the
+                device. We do not read, collect, or store the content of your communications.</li>
+            <li><strong>User Control:</strong> VPN-based features are optional and only start after you explicitly
+                approve the Android VPN permission dialog.</li>
+            <li><strong>No Remote Tunnel by Default:</strong> We do not operate a remote VPN service for this App and
+                do not route your traffic through our own servers for the App's core functionality.</li>
         </ul>
 
-        <h2>2. Data Collection & Usage</h2>
-        <p>We do not collect any personally identifiable information (PII) such as your name, email, address, or phone
-            number directly. However, we use third-party services (Google AdMob) that collect information used to
-            identify your device to serve relevant ads and monitor app performance.</p>
+        <h2>2. Information We May Process</h2>
+        <p>We do not directly collect personally identifiable information such as your name, phone number, or home
+            address through the App. Depending on which features you use, the following categories of information may
+            be processed:</p>
 
-        <h3>A. Device and Other IDs (Collected & Shared)</h3>
-        <p>Our app integrates Google AdMob SDK. This service automatically collects identifiers such as:</p>
+        <h3>A. App Usage and Network Activity Information</h3>
         <ul>
-            <li>Advertising ID (Google AAID)</li>
-            <li>Device ID</li>
-            <li>IP Address (Used for general location inference, not precise GPS)</li>
+            <li>App-level usage statistics shown inside the App</li>
+            <li>Session-level network activity summaries</li>
+            <li>Usage history created for charts, trends, alerts, and daily limits</li>
         </ul>
-        <p><strong>Purpose:</strong></p>
+        <p><strong>Purpose:</strong> To display usage information, history views, alerts, and related network tools
+            inside the App.</p>
+
+        <h3>B. Device and Diagnostics Information</h3>
         <ul>
-            <li><strong>Advertising:</strong> To serve personalized ads that are relevant to your interests.</li>
-            <li><strong>Fraud Prevention:</strong> To detect and prevent invalid clicks or bot activity.</li>
+            <li>Device model</li>
+            <li>Android version</li>
+            <li>Crash logs and performance diagnostics</li>
+        </ul>
+        <p><strong>Purpose:</strong> To identify bugs, investigate crashes, improve stability, and maintain app
+            performance.</p>
+
+        <h3>C. Advertising and Analytics-Related Identifiers</h3>
+        <p>The App may use third-party SDKs such as Google AdMob and Google Play Services. These services may process
+            identifiers and related technical information, including:</p>
+        <ul>
+            <li>Advertising ID</li>
+            <li>Device identifiers</li>
+            <li>IP address</li>
+            <li>Basic ad and diagnostic event data</li>
+        </ul>
+        <p><strong>Purpose:</strong> To support advertising, fraud prevention, diagnostics, and SDK functionality.</p>
+
+        <h2>3. What We Do Not Do</h2>
+        <ul>
+            <li>We do not collect the content of your messages, emails, or web browsing activity through the App.</li>
+            <li>We do not sell your personal information.</li>
+            <li>We do not require VPN-based features to start automatically without your consent.</li>
         </ul>
 
-        <h3>B. App Info and Performance (Collected)</h3>
-        <p>We monitor the stability of Data Saver Pro through automated diagnostics. This includes:</p>
-        <ul>
-            <li><strong>Diagnostics:</strong> Information about device model, OS version, and app performance logs.</li>
-        </ul>
-        <p><strong>Purpose:</strong> To identify bugs, fix crashes, and ensure the app runs smoothly.</p>
-
-        <h3>C. App Activity (Collected)</h3>
-        <p>We analyze data on how you interact with our App, including:</p>
-        <ul>
-            <li><strong>App Interactions:</strong> Button clicks, screen views, and feature usage (e.g., Ultra Mode
-                activation).</li>
-        </ul>
-        <p><strong>Purpose:</strong> To understand feature popularity and optimize the user experience.</p>
-
-        <h2>3. Third-Party Services</h2>
-        <p>We use the following third-party service providers. We strongly advise you to review their Privacy Policies:
-        </p>
+        <h2>4. Third-Party Services</h2>
+        <p>The App may rely on third-party service providers. Their own privacy policies may also apply:</p>
         <ul>
             <li><a href="https://policies.google.com/privacy">Google Play Services</a></li>
             <li><a href="https://developers.google.com/admob/terms">Google AdMob</a></li>
         </ul>
 
-        <h2>4. Data Security</h2>
-        <p>All data collected by our third-party partners is encrypted in transit using secure protocols (HTTPS/TLS). We
-            strive to use commercially acceptable means to protect your information, but remember that no method of
-            transmission over the internet is 100% secure.</p>
+        <h2>5. Data Storage and Security</h2>
+        <p>Usage-related information displayed by the App may be stored locally on your device to support app features
+            such as history, daily limits, and alerts. We take reasonable steps to protect information handled by the
+            App, but no transmission or storage method can be guaranteed to be 100% secure.</p>
 
-        <h2>5. Your Choices & Opt-Out</h2>
-        <p>You can opt-out of personalized advertising by adjusting your device settings:</p>
-        <p><strong>Android:</strong> Go to Settings > Google > Ads > Tap "Reset advertising ID" or "Delete advertising
-            ID".</p>
+        <h2>6. Your Choices</h2>
+        <ul>
+            <li><strong>VPN Permission:</strong> You may decline VPN permission. If you do, VPN-based features will not
+                start.</li>
+            <li><strong>Notifications:</strong> You may disable notification permission if you do not want usage alerts.
+            </li>
+            <li><strong>Advertising Preferences:</strong> You can manage ad personalization through your Android or
+                Google account settings.</li>
+        </ul>
 
-        <h2>6. Children’s Privacy</h2>
-        <p>Our Services do not address anyone under the age of 13. We do not knowingly collect personally identifiable
-            information from children under 13.</p>
+        <h2>7. Children's Privacy</h2>
+        <p>This App is not directed to children under the age of 13. We do not knowingly collect personal information
+            from children under 13.</p>
 
-        <h2>7. Changes to This Privacy Policy</h2>
-        <p>We may update our Privacy Policy from time to time. You are advised to review this Privacy Policy
-            periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this
-            page.</p>
+        <h2>8. Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy from time to time. When we do, we will post the updated version on this
+            page and revise the effective date above.</p>
 
-        <h2>8. Contact Us</h2>
+        <h2>9. Contact Us</h2>
         <p>If you have any questions about this Privacy Policy, please contact us at:</p>
         <p><strong>Email:</strong> longtv25102000@gmail.com</p>
 
         <div class="footer">
-            &copy; 2025 Data Saver Pro. All rights reserved.
+            &copy; 2026 Mobile Data Usage Monitor. All rights reserved.
         </div>
     </div>
 </body>
