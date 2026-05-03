@@ -1,9 +1,9 @@
 {
   "com.smartfactory.datasaverpro": {
     "enabled": true,
-    "stableVersionCode": 16,
-    "stableVersionName": "1.2",
-    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.smartfactory.datasaverpro",
+    "stableVersionCode": 169999,
+    "stableVersionName": “1.9,
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.longtv.gamebooster.lite",
     "title": {
       "default": "Update required",
       "ar": "التحديث مطلوب",
