@@ -1,9 +1,9 @@
 {
   "com.smartfactory.datasaverpro": {
     "enabled": true,
-    "stableVersionCode": 169999,
-    "stableVersionName": "1.9",
-    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.longtv.gamebooster.lite",
+    "stableVersionCode": 16,
+    "stableVersionName": "1.2",
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.smartfactory.datasaverpro",
     "title": {
       "default": "Update required",
       "ar": "التحديث مطلوب",
@@ -69,10 +69,10 @@
     "stableVersionName": "1.0.4",
     "playStoreUrl": "https://play.google.com/store/apps/details?id=com.smartfactory.noticlean"
   },
-    "com.longtv.gamebooster": {
+  "com.longtv.gamebooster": {
     "enabled": true,
-    "stableVersionCode": 28,
-    "stableVersionName": "1.0.3",
+    "stableVersionCode": 28788,
+    "stableVersionName": "2.0.3",
     "playStoreUrl": "https://play.google.com/store/apps/details?id=com.longtv.gamebooster",
     "title": {
       "default": "Update required",
