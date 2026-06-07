@@ -1,7 +1,7 @@
 {
   "com.smartfactory.battery.health.pro": [
     {
-      "name": "Mobile Data Usage Monitor",
+      "name": "Battery Health Pro",
       "dev": "Zubbly Studio",
       "iconUrl": "https://play-lh.googleusercontent.com/-cNbpFnO0-Xy2JaGZy9MbGYo5ioS4FqLVYWP6-Iu9J-7agsenZ4F0a7qVgLMOk_SeXqJY51ZEoUVJ3dboB-Pvw=w480-h960-rw",
       "packageName": "com.smartfactory.datasaverpro",
@@ -11,7 +11,7 @@
   ],
   "com.smartfactory.datasaver": [
     {
-      "name": "Battery Health Pro",
+      "name": "Mobile Data Usage Monitor",
       "dev": "Smart Factory",
       "iconUrl": "https://truongvanlongofficial.github.io/public-website-io/icons/battery.png",
       "packageName": "com.smartfactory.batteryhealth.pro",
