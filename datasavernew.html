@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta name="description" content="Chính sách quyền riêng tư DataSaver Pro – quản lý và bảo vệ dữ liệu di động."/>
+<title>Chính Sách Quyền Riêng Tư – DataSaver Pro</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--red:#E30613;--red-bg:#FFF0F0;--text:#1A1A2E;--sub:#5A6A85;--border:#E8ECF4;--bg:#F7F9FC;--card:#fff;--green:#16A34A;--green-bg:#F0FDF4;--blue:#2563EB;--blue-bg:#EFF6FF;--amber:#D97706;--amber-bg:#FFFBEB}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.75;font-size:15px}
+
+/* HERO */
+.hero{background:linear-gradient(135deg,#1A1A2E 0%,#16213E 60%,#0F3460 100%);color:#fff;padding:64px 24px 56px;text-align:center;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(227,6,19,.25),transparent 70%)}
+.badge{display:inline-flex;align-items:center;gap:8px;background:rgba(227,6,19,.15);border:1px solid rgba(227,6,19,.35);border-radius:999px;padding:6px 16px;font-size:13px;font-weight:600;color:#FF6B6B;margin-bottom:20px;position:relative}
+.hero h1{font-size:clamp(26px,5vw,42px);font-weight:700;letter-spacing:-.5px;margin-bottom:12px;position:relative}
+.hero h1 span{color:var(--red)}
+.hero>p{font-size:16px;color:rgba(255,255,255,.65);max-width:520px;margin:0 auto 28px;position:relative}
+.meta{display:flex;justify-content:center;gap:24px;flex-wrap:wrap;position:relative}
+.meta span{font-size:13px;color:rgba(255,255,255,.5)}
+.meta strong{color:rgba(255,255,255,.85)}
+
+/* LAYOUT */
+.wrap{max-width:860px;margin:0 auto;padding:0 20px 80px}
+
+/* TOC */
+.toc{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:28px 32px;margin:40px 0 28px;box-shadow:0 2px 12px rgba(0,0,0,.05)}
+.toc h2{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--sub);margin-bottom:16px}
+.toc ol{padding-left:20px;display:grid;grid-template-columns:1fr 1fr;gap:6px 24px}
+@media(max-width:560px){.toc ol{grid-template-columns:1fr}}
+.toc li{font-size:14px}
+.toc a{color:var(--blue);text-decoration:none;font-weight:500}
+.toc a:hover{text-decoration:underline}
+
+/* SECTION */
+.sec{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:32px;margin-bottom:20px;box-shadow:0 2px 12px rgba(0,0,0,.04)}
+.sec-hd{display:flex;align-items:flex-start;gap:16px;margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid var(--border)}
+.ico{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0}
+.sec h2{font-size:19px;font-weight:700;color:var(--text);margin-bottom:4px}
+.sec-num{font-size:12px;font-weight:600;color:var(--sub);text-transform:uppercase;letter-spacing:.8px}
+p{margin-bottom:14px;color:#374151}
+p:last-child{margin-bottom:0}
+h3{font-size:15px;font-weight:700;color:var(--text);margin:20px 0 10px}
+ul,ol{padding-left:20px;margin-bottom:14px}
+li{margin-bottom:7px;color:#374151}
+
+/* BOXES */
+.box{border-radius:10px;padding:14px 18px;margin:16px 0;font-size:14px;display:flex;gap:12px;align-items:flex-start}
+.box-ico{font-size:18px;flex-shrink:0;margin-top:1px}
+.box.green{background:var(--green-bg);border:1px solid #BBF7D0}
+.box.blue{background:var(--blue-bg);border:1px solid #BFDBFE}
+.box.amber{background:var(--amber-bg);border:1px solid #FDE68A}
+.box.red{background:var(--red-bg);border:1px solid #FECACA}
+.box.green .box-ico{color:var(--green)}
+.box.blue  .box-ico{color:var(--blue)}
+.box.amber .box-ico{color:var(--amber)}
+.box.red   .box-ico{color:var(--red)}
+.box p{margin:0}
+
+/* TABLE */
+.pt{width:100%;border-collapse:collapse;font-size:14px;margin:16px 0}
+.pt th{background:var(--bg);text-align:left;padding:10px 14px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.7px;color:var(--sub);border-bottom:2px solid var(--border)}
+.pt td{padding:11px 14px;border-bottom:1px solid var(--border);vertical-align:top}
+.pt tr:last-child td{border-bottom:none}
+.pt tr:hover td{background:var(--bg)}
+.bd{display:inline-block;padding:2px 10px;border-radius:999px;font-size:11px;font-weight:700}
+.bd-r{background:#FEE2E2;color:#B91C1C}
+.bd-o{background:#DBEAFE;color:#1D4ED8}
+.bd-g{background:#F3F4F6;color:#4B5563}
+
+/* THIRD PARTY GRID */
+.tpg{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0}
+@media(max-width:560px){.tpg{grid-template-columns:1fr}}
+.tpc{border:1px solid var(--border);border-radius:12px;padding:16px}
+.tpc h4{font-size:14px;font-weight:700;margin-bottom:6px}
+.tpc p{font-size:13px;color:var(--sub);margin-bottom:8px}
+.tpc a{font-size:12px;color:var(--blue)}
+
+/* CONTACT */
+.cta{background:linear-gradient(135deg,#1A1A2E,#0F3460);border-radius:16px;padding:36px;text-align:center;margin-top:32px;color:#fff}
+.cta h2{font-size:22px;margin-bottom:10px}
+.cta>p{color:rgba(255,255,255,.65);margin-bottom:20px}
+.cta-btn{display:inline-block;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:10px;padding:12px 24px;color:#fff;text-decoration:none;font-weight:600;font-size:15px;transition:background .2s}
+.cta-btn:hover{background:rgba(255,255,255,.2)}
+
+/* FOOTER */
+footer{text-align:center;padding:32px 20px;color:var(--sub);font-size:13px;border-top:1px solid var(--border)}
+footer strong{color:var(--text)}
+a{color:var(--blue)}
+code{font-size:13px;background:#F3F4F6;padding:1px 6px;border-radius:4px}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="badge">🛡️ Chính Sách Quyền Riêng Tư</div>
+  <h1>DataSaver <span>Pro</span></h1>
+  <p>Chúng tôi coi trọng quyền riêng tư của bạn. Tài liệu này mô tả rõ ràng những gì chúng tôi thu thập, cách sử dụng và quyền của bạn.</p>
+  <div class="meta">
+    <span>📦 <strong>com.longtv.datasaverpro</strong></span>
+    <span>📅 Cập nhật: <strong>12/06/2025</strong></span>
+    <span>🌐 <strong>Tiếng Việt / English</strong></span>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <div class="toc">
+    <h2>📋 Mục Lục</h2>
+    <ol>
+      <li><a href="#s1">Tổng quan</a></li>
+      <li><a href="#s2">Dữ liệu thu thập</a></li>
+      <li><a href="#s3">Dịch vụ VPN cục bộ</a></li>
+      <li><a href="#s4">Quyền truy cập</a></li>
+      <li><a href="#s5">Dịch vụ bên thứ ba</a></li>
+      <li><a href="#s6">Quảng cáo – AdMob</a></li>
+      <li><a href="#s7">Mua hàng trong app</a></li>
+      <li><a href="#s8">Trẻ em</a></li>
+      <li><a href="#s9">Bảo mật dữ liệu</a></li>
+      <li><a href="#s10">Quyền của bạn</a></li>
+      <li><a href="#s11">Thay đổi chính sách</a></li>
+      <li><a href="#s12">Liên hệ</a></li>
+    </ol>
+  </div>
+
+  <!-- 1 -->
+  <div class="sec" id="s1">
+    <div class="sec-hd">
+      <div class="ico" style="background:#F0FDF4">🌟</div>
+      <div><div class="sec-num">Mục 1</div><h2>Tổng Quan</h2></div>
+    </div>
+    <p><strong>DataSaver Pro</strong> ("ứng dụng", "chúng tôi") là ứng dụng Android giúp người dùng giám sát, kiểm soát và tối ưu việc sử dụng dữ liệu di động thông qua công nghệ VPN cục bộ và lọc DNS.</p>
+    <p>Chính sách này áp dụng cho ứng dụng <strong>DataSaver Pro</strong> (package: <code>com.longtv.datasaverpro</code>) trên nền tảng Android, được phát hành bởi nhà phát triển cá nhân <strong>Long TV</strong>.</p>
+    <div class="box green">
+      <span class="box-ico">✅</span>
+      <p><strong>Cam kết cốt lõi:</strong> DataSaver Pro hoạt động hoàn toàn cục bộ trên thiết bị của bạn. Chúng tôi <strong>không có máy chủ riêng</strong>, không thu thập, không lưu trữ và không truyền tải nội dung gói mạng hay lịch sử duyệt web của bạn đến bất kỳ đâu.</p>
+    </div>
+  </div>
+
+  <!-- 2 -->
+  <div class="sec" id="s2">
+    <div class="sec-hd">
+      <div class="ico" style="background:#EFF6FF">📊</div>
+      <div><div class="sec-num">Mục 2</div><h2>Dữ Liệu Chúng Tôi Thu Thập</h2></div>
+    </div>
+    <h3>2.1 Dữ liệu lưu trữ cục bộ trên thiết bị</h3>
+    <p>Các thông tin sau được lưu trữ <strong>chỉ trên thiết bị của bạn</strong> và không được gửi đến bất kỳ máy chủ nào:</p>
+    <ul>
+      <li>Thống kê lưu lượng mạng theo ngày (tải xuống / tải lên, tính bằng bytes)</li>
+      <li>Danh sách ứng dụng và trạng thái chặn / cho phép của từng ứng dụng</li>
+      <li>Cài đặt của người dùng (giới hạn dữ liệu, tự động khởi động, v.v.)</li>
+      <li>Số lượng truy vấn DNS đã bị chặn trong phiên VPN</li>
+      <li>Lịch sử thống kê 30 ngày (lưu trong Room Database nội bộ)</li>
+    </ul>
+    <h3>2.2 Dữ liệu KHÔNG thu thập</h3>
+    <div class="box red">
+      <span class="box-ico">🚫</span>
+      <div>
+        <p>Chúng tôi <strong>KHÔNG</strong> thu thập bất kỳ dữ liệu nào sau đây:</p>
+        <ul style="margin-top:8px">
+          <li>Nội dung các gói tin mạng (payload / nội dung HTTP/HTTPS)</li>
+          <li>Lịch sử duyệt web hoặc URL bạn truy cập</li>
+          <li>Tên người dùng, mật khẩu hoặc thông tin đăng nhập</li>
+          <li>Vị trí địa lý (GPS)</li>
+          <li>Danh bạ, tin nhắn, ảnh hoặc tệp cá nhân</li>
+          <li>Thông tin thẻ tín dụng hoặc tài khoản ngân hàng</li>
+          <li>Số IMEI hoặc số điện thoại</li>
+        </ul>
+      </div>
+    </div>
+    <h3>2.3 Dữ liệu thu thập bởi bên thứ ba</h3>
+    <p>Các đối tác bên thứ ba được tích hợp (Google AdMob, Google Play Billing) có thể thu thập một số dữ liệu theo chính sách riêng của họ. Xem chi tiết tại <a href="#s5">Mục 5</a> và <a href="#s6">Mục 6</a>.</p>
+  </div>
+
+  <!-- 3 -->
+  <div class="sec" id="s3">
+    <div class="sec-hd">
+      <div class="ico" style="background:#FFF0F0">🛡️</div>
+      <div><div class="sec-num">Mục 3</div><h2>Dịch Vụ VPN Cục Bộ</h2></div>
+    </div>
+    <div class="box amber">
+      <span class="box-ico">⚠️</span>
+      <p><strong>Lưu ý quan trọng:</strong> DataSaver Pro sử dụng Android <code>VpnService</code> API để tạo một kết nối VPN <strong>cục bộ (local VPN)</strong> ngay trên thiết bị. Đây KHÔNG phải VPN truyền thống kết nối đến máy chủ từ xa.</p>
+    </div>
+    <h3>Cách hoạt động</h3>
+    <ul>
+      <li><strong>Tunnel cục bộ:</strong> Ứng dụng tạo một giao diện mạng ảo (tun0) để chặn và lọc lưu lượng DNS ngay trên thiết bị.</li>
+      <li><strong>Lọc DNS:</strong> Các truy vấn DNS được phân tích bởi engine C++ nhúng trong APK — không gửi đến máy chủ của chúng tôi.</li>
+      <li><strong>Chặn ứng dụng:</strong> Ứng dụng kiểm soát kết nối mạng của từng app theo danh sách bạn cấu hình, lưu cục bộ.</li>
+      <li><strong>Không proxy:</strong> Lưu lượng web thực của bạn đi trực tiếp đến đích, không qua máy chủ trung gian nào của chúng tôi.</li>
+    </ul>
+    <div class="box green">
+      <span class="box-ico">🔒</span>
+      <p>Toàn bộ quá trình xử lý lưu lượng mạng diễn ra <strong>100% trên thiết bị của bạn</strong>. Chúng tôi không thể đọc, ghi lại hay phân tích nội dung kết nối internet của bạn.</p>
+    </div>
+    <h3>Biểu tượng khóa VPN</h3>
+    <p>Khi VPN đang hoạt động, Android hiển thị biểu tượng khóa 🔑 trên thanh trạng thái — đây là hành vi bắt buộc của hệ điều hành Android đối với mọi ứng dụng sử dụng VpnService API, không phải dấu hiệu của sự theo dõi.</p>
+  </div>
+
+  <!-- 4 -->
+  <div class="sec" id="s4">
+    <div class="sec-hd">
+      <div class="ico" style="background:#FFFBEB">🔑</div>
+      <div><div class="sec-num">Mục 4</div><h2>Quyền Truy Cập Ứng Dụng Yêu Cầu</h2></div>
+    </div>
+    <table class="pt">
+      <thead>
+        <tr><th>Quyền</th><th>Loại</th><th>Mục đích</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><code>BIND_VPN_SERVICE</code></td><td><span class="bd bd-r">Bắt buộc</span></td><td>Tạo kết nối VPN cục bộ để lọc lưu lượng mạng và chặn DNS</td></tr>
+        <tr><td><code>FOREGROUND_SERVICE</code></td><td><span class="bd bd-r">Bắt buộc</span></td><td>Duy trì VPN hoạt động ngầm khi màn hình tắt</td></tr>
+        <tr><td><code>FOREGROUND_SERVICE_SPECIAL_USE</code></td><td><span class="bd bd-r">Bắt buộc</span></td><td>Phân loại foreground service theo yêu cầu Android 14+</td></tr>
+        <tr><td><code>RECEIVE_BOOT_COMPLETED</code></td><td><span class="bd bd-o">Tùy chọn</span></td><td>Tự động khởi động VPN khi thiết bị bật (nếu người dùng bật tính năng này)</td></tr>
+        <tr><td><code>PACKAGE_USAGE_STATS</code></td><td><span class="bd bd-o">Tùy chọn</span></td><td>Đọc thống kê data usage của từng ứng dụng. Người dùng phải cấp thủ công trong Cài đặt hệ thống</td></tr>
+        <tr><td><code>QUERY_ALL_PACKAGES</code></td><td><span class="bd bd-r">Bắt buộc</span></td><td>Liệt kê ứng dụng đã cài để hiển thị trong màn hình quản lý</td></tr>
+        <tr><td><code>INTERNET</code></td><td><span class="bd bd-r">Bắt buộc</span></td><td>Kết nối mạng thông thường và tải quảng cáo AdMob</td></tr>
+        <tr><td><code>ACCESS_NETWORK_STATE</code></td><td><span class="bd bd-r">Bắt buộc</span></td><td>Phát hiện loại mạng (WiFi/3G/4G/5G) và trạng thái kết nối</td></tr>
+        <tr><td><code>READ_PHONE_STATE</code></td><td><span class="bd bd-o">Tùy chọn</span></td><td>Xác định tên nhà mạng di động (Viettel, Mobifone...) để hiển thị UI</td></tr>
+        <tr><td><code>AD_ID</code></td><td><span class="bd bd-g">AdMob</span></td><td>Truy cập Android Advertising ID để hiển thị quảng cáo phù hợp qua Google AdMob</td></tr>
+        <tr><td><code>CHANGE_NETWORK_STATE</code></td><td><span class="bd bd-r">Bắt buộc</span></td><td>Theo dõi thay đổi kết nối mạng, tự động bật VPN khi dùng mobile data</td></tr>
+      </tbody>
+    </table>
+    <div class="box blue">
+      <span class="box-ico">ℹ️</span>
+      <p>Quyền <strong>PACKAGE_USAGE_STATS</strong> không được cấp tự động — người dùng phải vào <em>Cài đặt → Ứng dụng đặc biệt → Truy cập dữ liệu sử dụng</em> để bật. Nếu không cấp, tính năng thống kê theo ứng dụng sẽ bị tắt nhưng các tính năng VPN khác vẫn hoạt động bình thường.</p>
+    </div>
+  </div>
+
+  <!-- 5 -->
+  <div class="sec" id="s5">
+    <div class="sec-hd">
+      <div class="ico" style="background:#F5F3FF">🔗</div>
+      <div><div class="sec-num">Mục 5</div><h2>Dịch Vụ Bên Thứ Ba</h2></div>
+    </div>
+    <p>Ứng dụng tích hợp các dịch vụ bên thứ ba sau. Mỗi dịch vụ có chính sách quyền riêng tư độc lập:</p>
+    <div class="tpg">
+      <div class="tpc">
+        <h4>🎯 Google AdMob</h4>
+        <p>Hiển thị quảng cáo banner, interstitial và rewarded video. Thu thập Advertising ID để cá nhân hóa quảng cáo.</p>
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">→ Google Privacy Policy</a>
+      </div>
+      <div class="tpc">
+        <h4>🛒 Google Play Billing</h4>
+        <p>Xử lý thanh toán In-App Purchase. Google quản lý toàn bộ giao dịch — chúng tôi không nhận hay lưu thông tin thẻ thanh toán.</p>
+        <a href="https://play.google.com/about/play-terms/" target="_blank" rel="noopener">→ Google Play Terms</a>
+      </div>
+      <div class="tpc">
+        <h4>📊 Google Play Services</h4>
+        <p>Cung cấp các API nền tảng Android cơ bản. Không được sử dụng cho mục đích phân tích hay tracking người dùng.</p>
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">→ Google Privacy Policy</a>
+      </div>
+      <div class="tpc">
+        <h4>📡 Android TrafficStats API</h4>
+        <p>API hệ thống Android để đọc thống kê lưu lượng mạng. Dữ liệu chỉ đọc cục bộ, không gửi ra ngoài.</p>
+        <a href="https://developer.android.com/reference/android/net/TrafficStats" target="_blank" rel="noopener">→ Android Docs</a>
+      </div>
+    </div>
+    <div class="box amber">
+      <span class="box-ico">⚠️</span>
+      <p>Chúng tôi <strong>không</strong> sử dụng Google Analytics, Firebase Analytics, Crashlytics hay bất kỳ công cụ tracking người dùng nào khác trong phiên bản hiện tại.</p>
+    </div>
+  </div>
+
+  <!-- 6 -->
+  <div class="sec" id="s6">
+    <div class="sec-hd">
+      <div class="ico" style="background:#FEF3C7">📢</div>
+      <div><div class="sec-num">Mục 6</div><h2>Quảng Cáo – Google AdMob</h2></div>
+    </div>
+    <p>DataSaver Pro hiển thị quảng cáo thông qua <strong>Google AdMob</strong> để duy trì ứng dụng miễn phí cho người dùng.</p>
+    <h3>Loại quảng cáo hiển thị</h3>
+    <ul>
+      <li><strong>Banner:</strong> Hiển thị tại cuối màn hình Thống Kê và Quản lý Ứng dụng</li>
+      <li><strong>Interstitial:</strong> Hiển thị toàn màn hình sau khi bật VPN (tối đa 1 lần / 30 phút)</li>
+      <li><strong>Rewarded Video:</strong> Chỉ hiển thị khi người dùng <em>chủ động</em> bấm "Xem video" trong Cài đặt</li>
+    </ul>
+    <h3>Dữ liệu AdMob có thể thu thập</h3>
+    <ul>
+      <li>Android Advertising ID (AAID) – có thể reset hoặc xóa trong Cài đặt điện thoại</li>
+      <li>Địa chỉ IP (dùng xác định vị trí quốc gia, không lưu chính xác)</li>
+      <li>Thông tin thiết bị cơ bản (model máy, phiên bản Android)</li>
+      <li>Dữ liệu tương tác quảng cáo (lượt xem, lượt click)</li>
+    </ul>
+    <h3>Kiểm soát quảng cáo của bạn</h3>
+    <ul>
+      <li><strong>Reset Advertising ID:</strong> Cài đặt → Google → Quảng cáo → Đặt lại ID quảng cáo</li>
+      <li><strong>Tắt cá nhân hóa:</strong> Cài đặt → Google → Quảng cáo → Không cá nhân hóa quảng cáo</li>
+      <li><strong>Xoá toàn bộ quảng cáo:</strong> Mua gói <em>"Xoá quảng cáo"</em> trong ứng dụng</li>
+    </ul>
+    <div class="box green">
+      <span class="box-ico">🎉</span>
+      <p>Sau khi mua <strong>"Xoá quảng cáo"</strong>, ứng dụng sẽ không còn tải hay hiển thị bất kỳ quảng cáo nào. Google AdMob sẽ không thu thập dữ liệu quảng cáo từ phiên làm việc của bạn nữa.</p>
+    </div>
+  </div>
+
+  <!-- 7 -->
+  <div class="sec" id="s7">
+    <div class="sec-hd">
+      <div class="ico" style="background:#F0FDF4">🛒</div>
+      <div><div class="sec-num">Mục 7</div><h2>Mua Hàng Trong Ứng Dụng (IAP)</h2></div>
+    </div>
+    <p>Ứng dụng cung cấp sản phẩm mua hàng một lần:</p>
+    <ul>
+      <li><strong>Xoá quảng cáo</strong> – Thanh toán một lần, loại bỏ vĩnh viễn banner và interstitial</li>
+    </ul>
+    <h3>Xử lý thanh toán</h3>
+    <p>Tất cả giao dịch được xử lý bởi <strong>Google Play Billing</strong>. Chúng tôi <strong>không</strong> nhận, xử lý hoặc lưu trữ thông tin thẻ tín dụng, thẻ ghi nợ hay bất kỳ thông tin thanh toán nào của bạn.</p>
+    <h3>Thông tin nhận từ Google Play</h3>
+    <ul>
+      <li>Trạng thái giao dịch (thành công / thất bại / đã hoàn tiền)</li>
+      <li>Purchase token (mã xác nhận, dùng để kích hoạt tính năng)</li>
+    </ul>
+    <h3>Khôi phục mua hàng</h3>
+    <p>Khi cài đặt lại ứng dụng, DataSaver Pro tự động truy vấn Google Play để khôi phục trạng thái mua hàng — bạn không cần mua lại.</p>
+    <h3>Hoàn tiền</h3>
+    <p>Chính sách hoàn tiền theo quy định của <a href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener">Google Play</a>. Người dùng có thể yêu cầu hoàn tiền trong vòng 48 giờ sau khi mua.</p>
+  </div>
+
+  <!-- 8 -->
+  <div class="sec" id="s8">
+    <div class="sec-hd">
+      <div class="ico" style="background:#FFF0F0">👶</div>
+      <div><div class="sec-num">Mục 8</div><h2>Chính Sách Đối Với Trẻ Em</h2></div>
+    </div>
+    <p>DataSaver Pro <strong>không được thiết kế cho trẻ em dưới 13 tuổi</strong> và chúng tôi không chủ đích thu thập thông tin cá nhân từ trẻ em.</p>
+    <p>Ứng dụng được phân loại <strong>dành cho người dùng từ 13 tuổi trở lên</strong> trên Google Play Store. Nếu bạn tin rằng trẻ em đã sử dụng ứng dụng và cung cấp thông tin cá nhân, vui lòng liên hệ chúng tôi ngay để xóa dữ liệu.</p>
+    <div class="box amber">
+      <span class="box-ico">⚠️</span>
+      <p>Quảng cáo trong ứng dụng được cung cấp bởi Google AdMob. Google có các chính sách riêng về quảng cáo nhắm mục tiêu trẻ em theo luật COPPA (Mỹ) và GDPR-K (EU).</p>
+    </div>
+  </div>
+
+  <!-- 9 -->
+  <div class="sec" id="s9">
+    <div class="sec-hd">
+      <div class="ico" style="background:#EFF6FF">🔒</div>
+      <div><div class="sec-num">Mục 9</div><h2>Bảo Mật Dữ Liệu</h2></div>
+    </div>
+    <p>Chúng tôi áp dụng các biện pháp kỹ thuật phù hợp để bảo vệ dữ liệu của bạn:</p>
+    <ul>
+      <li><strong>Lưu trữ cục bộ:</strong> Toàn bộ dữ liệu người dùng nằm trong <code>app-specific storage</code>, không thể truy cập bởi ứng dụng khác trên thiết bị</li>
+      <li><strong>Không truyền tải:</strong> Không có kênh truyền dữ liệu người dùng ra ngoài thiết bị từ phía chúng tôi</li>
+      <li><strong>Mã hóa thiết bị:</strong> Dữ liệu được bảo vệ bởi mã hóa phân vùng thiết bị nếu người dùng bật tính năng này</li>
+      <li><strong>Không tài khoản:</strong> Ứng dụng không yêu cầu đăng ký, không lưu thông tin đăng nhập</li>
+    </ul>
+    <div class="box blue">
+      <span class="box-ico">ℹ️</span>
+      <p>Khi bạn gỡ cài đặt DataSaver Pro, toàn bộ dữ liệu ứng dụng (cài đặt, thống kê, trạng thái IAP trên thiết bị) sẽ bị xóa hoàn toàn.</p>
+    </div>
+  </div>
+
+  <!-- 10 -->
+  <div class="sec" id="s10">
+    <div class="sec-hd">
+      <div class="ico" style="background:#F5F3FF">⚖️</div>
+      <div><div class="sec-num">Mục 10</div><h2>Quyền Của Bạn</h2></div>
+    </div>
+    <h3>Quyền chung (tất cả người dùng)</h3>
+    <ul>
+      <li><strong>Xóa dữ liệu:</strong> Cài đặt → Ứng dụng → DataSaver Pro → Xóa dữ liệu</li>
+      <li><strong>Thu hồi quyền:</strong> Cài đặt → Ứng dụng → DataSaver Pro → Quyền</li>
+      <li><strong>Gỡ cài đặt:</strong> Xóa hoàn toàn ứng dụng và mọi dữ liệu</li>
+      <li><strong>Từ chối quảng cáo cá nhân hóa:</strong> Cài đặt → Google → Quảng cáo</li>
+    </ul>
+    <h3>Quyền theo GDPR (người dùng EU/EEA)</h3>
+    <ul>
+      <li>Quyền truy cập dữ liệu cá nhân</li>
+      <li>Quyền xóa dữ liệu ("right to be forgotten")</li>
+      <li>Quyền phản đối xử lý dữ liệu</li>
+      <li>Quyền về tính di động dữ liệu</li>
+    </ul>
+    <p>Để thực hiện các quyền GDPR, vui lòng liên hệ qua email bên dưới. Vì chúng tôi không lưu dữ liệu cá nhân trên server, phần lớn dữ liệu có thể xóa trực tiếp từ thiết bị của bạn.</p>
+    <h3>Quyền theo CCPA (người dùng California, Mỹ)</h3>
+    <p>Cư dân California có thể yêu cầu thông tin về dữ liệu cá nhân đã chia sẻ với bên thứ ba. DataSaver Pro <strong>không bán</strong> thông tin cá nhân người dùng cho bất kỳ bên thứ ba nào.</p>
+  </div>
+
+  <!-- 11 -->
+  <div class="sec" id="s11">
+    <div class="sec-hd">
+      <div class="ico" style="background:#FFFBEB">📝</div>
+      <div><div class="sec-num">Mục 11</div><h2>Thay Đổi Chính Sách</h2></div>
+    </div>
+    <p>Chúng tôi có thể cập nhật Chính sách Quyền Riêng Tư này theo thời gian. Khi có thay đổi quan trọng, chúng tôi sẽ:</p>
+    <ul>
+      <li>Cập nhật ngày "Cập nhật lần cuối" ở đầu trang</li>
+      <li>Thông báo trong phần mô tả bản cập nhật trên Google Play Store</li>
+    </ul>
+    <p>Việc tiếp tục sử dụng ứng dụng sau khi thay đổi có nghĩa là bạn chấp nhận chính sách mới. Nếu không đồng ý, bạn có thể gỡ cài đặt ứng dụng.</p>
+    <h3>Lịch sử thay đổi</h3>
+    <ul>
+      <li><strong>12/06/2025</strong> – Phiên bản đầu tiên. Bổ sung điều khoản AdMob, IAP và VPN cục bộ.</li>
+    </ul>
+  </div>
+
+  <!-- CONTACT -->
+  <div class="cta" id="s12">
+    <h2>📬 Liên Hệ</h2>
+    <p>Nếu bạn có câu hỏi về chính sách quyền riêng tư hoặc muốn thực hiện các quyền của mình, vui lòng liên hệ:</p>
+    <a class="cta-btn" href="mailto:longtv25102000@gmail.com">✉️ &nbsp;longtv25102000@gmail.com</a>
+    <p style="margin-top:16px;font-size:13px;color:rgba(255,255,255,.45)">Chúng tôi sẽ phản hồi trong vòng <strong style="color:rgba(255,255,255,.7)">5 ngày làm việc</strong>.</p>
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2025 <strong>DataSaver Pro</strong> · Long TV · Mọi quyền được bảo lưu</p>
+  <p style="margin-top:6px">
+    <a href="https://play.google.com/store/apps/details?id=com.longtv.datasaverpro" target="_blank" rel="noopener">Google Play</a>
+    &nbsp;·&nbsp;
+    <a href="mailto:privacy@datasaverpro.app">Liên hệ</a>
+  </p>
+</footer>
+
+</body>
+</html>
