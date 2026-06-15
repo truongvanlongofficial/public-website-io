@@ -102,7 +102,7 @@ code{font-size:13px;background:#F3F4F6;padding:1px 6px;border-radius:4px}
   <p>Chúng tôi coi trọng quyền riêng tư của bạn. Tài liệu này mô tả rõ ràng những gì chúng tôi thu thập, cách sử dụng và quyền của bạn.</p>
   <div class="meta">
     <span>📦 <strong>com.longtv.datasaverpro</strong></span>
-    <span>📅 Cập nhật: <strong>12/06/2025</strong></span>
+    <span>📅 Cập nhật: <strong>15/06/2025</strong></span>
     <span>🌐 <strong>Tiếng Việt / English</strong></span>
   </div>
 </div>
@@ -186,12 +186,13 @@ code{font-size:13px;background:#F3F4F6;padding:1px 6px;border-radius:4px}
       <span class="box-ico">⚠️</span>
       <p><strong>Lưu ý quan trọng:</strong> DataSaver Pro sử dụng Android <code>VpnService</code> API để tạo một kết nối VPN <strong>cục bộ (local VPN)</strong> ngay trên thiết bị. Đây KHÔNG phải VPN truyền thống kết nối đến máy chủ từ xa.</p>
     </div>
-    <h3>Cách hoạt động</h3>
+    <h3>Cách hoạt động thực tế</h3>
     <ul>
-      <li><strong>Tunnel cục bộ:</strong> Ứng dụng tạo một giao diện mạng ảo (tun0) để chặn và lọc lưu lượng DNS ngay trên thiết bị.</li>
-      <li><strong>Lọc DNS:</strong> Các truy vấn DNS được phân tích bởi engine C++ nhúng trong APK — không gửi đến máy chủ của chúng tôi.</li>
-      <li><strong>Chặn ứng dụng:</strong> Ứng dụng kiểm soát kết nối mạng của từng app theo danh sách bạn cấu hình, lưu cục bộ.</li>
-      <li><strong>Không proxy:</strong> Lưu lượng web thực của bạn đi trực tiếp đến đích, không qua máy chủ trung gian nào của chúng tôi.</li>
+      <li><strong>Chặn packet cấp nhân (C++ engine):</strong> Ứng dụng tích hợp engine C++ (NDK) xử lý từng gói tin mạng trực tiếp trên thiết bị — packet bị chặn <strong>không bao giờ rời khỏi thiết bị</strong>, do đó data di động thật sự được tiết kiệm.</li>
+      <li><strong>Tunnel cục bộ:</strong> Ứng dụng tạo giao diện mạng ảo (TUN interface) để chặn và lọc lưu lượng DNS ngay trên thiết bị, không gửi đến máy chủ của chúng tôi.</li>
+      <li><strong>Kiểm soát theo ứng dụng:</strong> Mỗi app được gán một uid — engine C++ cho phép hoặc chặn theo uid dựa trên danh sách bạn cấu hình, lưu cục bộ trong database.</li>
+      <li><strong>Giới hạn data hàng ngày:</strong> Khi lưu lượng vượt ngưỡng (toàn thiết bị hoặc từng app), engine tự động chặn các gói tin mới cho đến khi reset vào nửa đêm.</li>
+      <li><strong>Không proxy, không mã hoá:</strong> Lưu lượng web thực của bạn đi trực tiếp đến đích, không qua máy chủ trung gian nào. Ứng dụng <strong>không</strong> mã hoá hay đọc nội dung kết nối.</li>
     </ul>
     <div class="box green">
       <span class="box-ico">🔒</span>
@@ -215,12 +216,12 @@ code{font-size:13px;background:#F3F4F6;padding:1px 6px;border-radius:4px}
         <tr><td><code>BIND_VPN_SERVICE</code></td><td><span class="bd bd-r">Bắt buộc</span></td><td>Tạo kết nối VPN cục bộ để lọc lưu lượng mạng và chặn DNS</td></tr>
         <tr><td><code>FOREGROUND_SERVICE</code></td><td><span class="bd bd-r">Bắt buộc</span></td><td>Duy trì VPN hoạt động ngầm khi màn hình tắt</td></tr>
         <tr><td><code>FOREGROUND_SERVICE_SPECIAL_USE</code></td><td><span class="bd bd-r">Bắt buộc</span></td><td>Phân loại foreground service theo yêu cầu Android 14+</td></tr>
+        <tr><td><code>POST_NOTIFICATIONS</code></td><td><span class="bd bd-o">Tuỳ chọn</span></td><td>Hiển thị thông báo trạng thái VPN (Android 13+). Người dùng được hỏi khi mở app lần đầu</td></tr>
         <tr><td><code>RECEIVE_BOOT_COMPLETED</code></td><td><span class="bd bd-o">Tùy chọn</span></td><td>Tự động khởi động VPN khi thiết bị bật (nếu người dùng bật tính năng này)</td></tr>
         <tr><td><code>PACKAGE_USAGE_STATS</code></td><td><span class="bd bd-o">Tùy chọn</span></td><td>Đọc thống kê data usage của từng ứng dụng. Người dùng phải cấp thủ công trong Cài đặt hệ thống</td></tr>
-        <tr><td><code>QUERY_ALL_PACKAGES</code></td><td><span class="bd bd-r">Bắt buộc</span></td><td>Liệt kê ứng dụng đã cài để hiển thị trong màn hình quản lý</td></tr>
         <tr><td><code>INTERNET</code></td><td><span class="bd bd-r">Bắt buộc</span></td><td>Kết nối mạng thông thường và tải quảng cáo AdMob</td></tr>
         <tr><td><code>ACCESS_NETWORK_STATE</code></td><td><span class="bd bd-r">Bắt buộc</span></td><td>Phát hiện loại mạng (WiFi/3G/4G/5G) và trạng thái kết nối</td></tr>
-        <tr><td><code>READ_PHONE_STATE</code></td><td><span class="bd bd-o">Tùy chọn</span></td><td>Xác định tên nhà mạng di động (Viettel, Mobifone...) để hiển thị UI</td></tr>
+        <tr><td><code>READ_PHONE_STATE</code></td><td><span class="bd bd-o">Tùy chọn</span></td><td>Xác định tên nhà mạng di động (Viettel, Mobifone...) để hiển thị UI. Người dùng được hỏi khi mở app lần đầu</td></tr>
         <tr><td><code>AD_ID</code></td><td><span class="bd bd-g">AdMob</span></td><td>Truy cập Android Advertising ID để hiển thị quảng cáo phù hợp qua Google AdMob</td></tr>
         <tr><td><code>CHANGE_NETWORK_STATE</code></td><td><span class="bd bd-r">Bắt buộc</span></td><td>Theo dõi thay đổi kết nối mạng, tự động bật VPN khi dùng mobile data</td></tr>
       </tbody>
@@ -393,6 +394,7 @@ code{font-size:13px;background:#F3F4F6;padding:1px 6px;border-radius:4px}
     <p>Việc tiếp tục sử dụng ứng dụng sau khi thay đổi có nghĩa là bạn chấp nhận chính sách mới. Nếu không đồng ý, bạn có thể gỡ cài đặt ứng dụng.</p>
     <h3>Lịch sử thay đổi</h3>
     <ul>
+      <li><strong>15/06/2025</strong> – Cập nhật: làm rõ cơ chế chặn packet C++ thật sự tiết kiệm data; cập nhật bảng quyền (bỏ <code>QUERY_ALL_PACKAGES</code>, thêm <code>POST_NOTIFICATIONS</code>); cập nhật mô tả VPN service.</li>
       <li><strong>12/06/2025</strong> – Phiên bản đầu tiên. Bổ sung điều khoản AdMob, IAP và VPN cục bộ.</li>
     </ul>
   </div>
@@ -401,7 +403,7 @@ code{font-size:13px;background:#F3F4F6;padding:1px 6px;border-radius:4px}
   <div class="cta" id="s12">
     <h2>📬 Liên Hệ</h2>
     <p>Nếu bạn có câu hỏi về chính sách quyền riêng tư hoặc muốn thực hiện các quyền của mình, vui lòng liên hệ:</p>
-    <a class="cta-btn" href="mailto:longtv25102000@gmail.com">✉️ &nbsp;longtv25102000@gmail.com</a>
+    <a class="cta-btn" href="mailto:privacy@datasaverpro.app">✉️ &nbsp;privacy@datasaverpro.app</a>
     <p style="margin-top:16px;font-size:13px;color:rgba(255,255,255,.45)">Chúng tôi sẽ phản hồi trong vòng <strong style="color:rgba(255,255,255,.7)">5 ngày làm việc</strong>.</p>
   </div>
 
