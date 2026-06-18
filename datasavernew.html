@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-  <meta name="description" content="Chính sách quyền riêng tư DataSaver Pro – quản lý và bảo vệ dữ liệu di động."/>
+  <meta name="description" content="Chính sách quyền riêng tư DataSaver Pro – quản lý dữ liệu di động cục bộ."/>
   <title>Chính Sách Quyền Riêng Tư – DataSaver Pro</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
@@ -133,7 +133,7 @@
       <div class="ico" style="background:#F0FDF4">🌟</div>
       <div><div class="sec-num">Mục 1</div><h2>Tổng Quan</h2></div>
     </div>
-    <p><strong>DataSaver Pro</strong> ("ứng dụng", "chúng tôi") là ứng dụng Android giúp người dùng giám sát, kiểm soát và tối ưu việc sử dụng dữ liệu di động thông qua công nghệ VPN cục bộ và lọc DNS.</p>
+    <p><strong>DataSaver Pro</strong> ("ứng dụng", "chúng tôi") là ứng dụng Android giúp người dùng giám sát và kiểm soát việc sử dụng dữ liệu di động thông qua công nghệ VPN cục bộ và các quy tắc data do người dùng cấu hình.</p>
     <p>Chính sách này áp dụng cho ứng dụng <strong>DataSaver Pro</strong> (package: <code>com.longtv.datasaverpro</code>) trên nền tảng Android, được phát hành bởi nhà phát triển cá nhân <strong>Long TV</strong>.</p>
     <div class="box green">
       <span class="box-ico">✅</span>
@@ -153,7 +153,7 @@
       <li>Thống kê lưu lượng mạng theo ngày (tải xuống / tải lên, tính bằng bytes)</li>
       <li>Danh sách ứng dụng và trạng thái quản lý / cho phép của từng ứng dụng</li>
       <li>Cài đặt của người dùng (giới hạn dữ liệu, tự động khởi động, v.v.)</li>
-      <li>Số lượng truy vấn DNS đã được lọc trong phiên VPN</li>
+      <li>Số lượng kết nối bị hạn chế theo quy tắc do người dùng cấu hình trong phiên VPN</li>
       <li>Lịch sử thống kê 30 ngày (lưu trong Room Database nội bộ)</li>
     </ul>
     <h3>2.2 Dữ liệu KHÔNG thu thập</h3>
@@ -188,8 +188,8 @@
     </div>
     <h3>Cách hoạt động thực tế</h3>
     <ul>
-      <li><strong>Lọc packet cấp nhân (C++ engine):</strong> Ứng dụng tích hợp engine C++ (NDK) xử lý từng gói tin mạng trực tiếp trên thiết bị — gói tin bị lọc <strong>không bao giờ rời khỏi thiết bị</strong>, do đó data di động thật sự được tiết kiệm.</li>
-      <li><strong>Tunnel cục bộ:</strong> Ứng dụng tạo giao diện mạng ảo (TUN interface) để giám sát và lọc lưu lượng DNS ngay trên thiết bị, không gửi đến máy chủ của chúng tôi.</li>
+      <li><strong>Engine kiểm soát lưu lượng cục bộ:</strong> Ứng dụng tích hợp engine C++ (NDK) xử lý thống kê và quy tắc data trực tiếp trên thiết bị — gói tin bị hạn chế theo lựa chọn của bạn <strong>không bao giờ rời khỏi thiết bị</strong>.</li>
+      <li><strong>Tunnel cục bộ:</strong> Ứng dụng tạo giao diện mạng ảo (TUN interface) để giám sát lưu lượng ngay trên thiết bị, không gửi đến máy chủ của chúng tôi.</li>
       <li><strong>Kiểm soát theo ứng dụng:</strong> Mỗi app được gán một uid — engine C++ quản lý lưu lượng theo uid dựa trên danh sách bạn cấu hình, lưu cục bộ trong database.</li>
       <li><strong>Giới hạn data hàng ngày:</strong> Khi lưu lượng vượt ngưỡng (toàn thiết bị hoặc từng app), engine tự động hạn chế các gói tin mới cho đến khi reset vào nửa đêm.</li>
       <li><strong>Không proxy, không mã hoá:</strong> Lưu lượng web thực của bạn đi trực tiếp đến đích, không qua máy chủ trung gian nào. Ứng dụng <strong>không</strong> mã hoá hay đọc nội dung kết nối.</li>
@@ -213,7 +213,7 @@
       <tr><th>Quyền</th><th>Loại</th><th>Mục đích</th></tr>
       </thead>
       <tbody>
-      <tr><td><code>BIND_VPN_SERVICE</code></td><td><span class="bd bd-r">Bắt buộc</span></td><td>Tạo kết nối VPN cục bộ để lọc và kiểm soát lưu lượng mạng trên thiết bị</td></tr>
+      <tr><td><code>BIND_VPN_SERVICE</code></td><td><span class="bd bd-r">Bắt buộc</span></td><td>Tạo kết nối VPN cục bộ để giám sát và áp dụng quy tắc data do người dùng cấu hình trên thiết bị</td></tr>
       <tr><td><code>FOREGROUND_SERVICE</code></td><td><span class="bd bd-r">Bắt buộc</span></td><td>Duy trì VPN hoạt động ngầm khi màn hình tắt</td></tr>
       <tr><td><code>FOREGROUND_SERVICE_SPECIAL_USE</code></td><td><span class="bd bd-r">Bắt buộc</span></td><td>Phân loại foreground service theo yêu cầu Android 14+</td></tr>
       <tr><td><code>POST_NOTIFICATIONS</code></td><td><span class="bd bd-o">Tuỳ chọn</span></td><td>Hiển thị thông báo trạng thái VPN (Android 13+). Người dùng được hỏi khi mở app lần đầu</td></tr>
@@ -221,7 +221,6 @@
       <tr><td><code>PACKAGE_USAGE_STATS</code></td><td><span class="bd bd-o">Tùy chọn</span></td><td>Đọc thống kê data usage của từng ứng dụng. Người dùng phải cấp thủ công trong Cài đặt hệ thống</td></tr>
       <tr><td><code>INTERNET</code></td><td><span class="bd bd-r">Bắt buộc</span></td><td>Kết nối mạng thông thường và tải quảng cáo AdMob</td></tr>
       <tr><td><code>ACCESS_NETWORK_STATE</code></td><td><span class="bd bd-r">Bắt buộc</span></td><td>Phát hiện loại mạng (WiFi/3G/4G/5G) và trạng thái kết nối</td></tr>
-      <tr><td><code>READ_PHONE_STATE</code></td><td><span class="bd bd-o">Tùy chọn</span></td><td>Xác định tên nhà mạng di động (Viettel, Mobifone...) để hiển thị UI. Người dùng được hỏi khi mở app lần đầu</td></tr>
       <tr><td><code>AD_ID</code></td><td><span class="bd bd-g">AdMob</span></td><td>Truy cập Android Advertising ID để hiển thị quảng cáo phù hợp qua Google AdMob</td></tr>
       <tr><td><code>CHANGE_NETWORK_STATE</code></td><td><span class="bd bd-r">Bắt buộc</span></td><td>Theo dõi thay đổi kết nối mạng, tự động bật VPN khi dùng mobile data</td></tr>
       </tbody>
@@ -242,7 +241,7 @@
     <div class="tpg">
       <div class="tpc">
         <h4>🎯 Google AdMob</h4>
-        <p>Hiển thị quảng cáo banner, interstitial và rewarded video. Thu thập Advertising ID để cá nhân hóa quảng cáo.</p>
+        <p>Hiển thị quảng cáo banner và rewarded video. Thu thập Advertising ID và một số dữ liệu chẩn đoán/quảng cáo theo chính sách của Google.</p>
         <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">→ Google Privacy Policy</a>
       </div>
       <div class="tpc">
@@ -277,7 +276,6 @@
     <h3>Loại quảng cáo hiển thị</h3>
     <ul>
       <li><strong>Banner:</strong> Hiển thị tại cuối màn hình Thống Kê và Quản lý Ứng dụng</li>
-      <li><strong>Interstitial:</strong> Hiển thị toàn màn hình sau khi bật VPN (tối đa 1 lần / 30 phút)</li>
       <li><strong>Rewarded Video:</strong> Chỉ hiển thị khi người dùng <em>chủ động</em> bấm "Xem video" trong Cài đặt</li>
     </ul>
     <h3>Dữ liệu AdMob có thể thu thập</h3>
@@ -307,7 +305,7 @@
     </div>
     <p>Ứng dụng cung cấp sản phẩm mua hàng một lần:</p>
     <ul>
-      <li><strong>Xoá quảng cáo</strong> – Thanh toán một lần, loại bỏ vĩnh viễn banner và interstitial</li>
+      <li><strong>Xoá quảng cáo</strong> – Thanh toán một lần, loại bỏ vĩnh viễn tất cả quảng cáo trong ứng dụng, bao gồm banner và rewarded video</li>
     </ul>
     <h3>Xử lý thanh toán</h3>
     <p>Tất cả giao dịch được xử lý bởi <strong>Google Play Billing</strong>. Chúng tôi <strong>không</strong> nhận, xử lý hoặc lưu trữ thông tin thẻ tín dụng, thẻ ghi nợ hay bất kỳ thông tin thanh toán nào của bạn.</p>
@@ -346,6 +344,7 @@
     <ul>
       <li><strong>Lưu trữ cục bộ:</strong> Toàn bộ dữ liệu người dùng nằm trong <code>app-specific storage</code>, không thể truy cập bởi ứng dụng khác trên thiết bị</li>
       <li><strong>Không truyền tải:</strong> Không có kênh truyền dữ liệu người dùng ra ngoài thiết bị từ phía chúng tôi</li>
+      <li><strong>Không sao lưu đám mây:</strong> Ứng dụng tắt Android Auto Backup và không đưa cài đặt, thống kê, quy tắc ứng dụng hoặc trạng thái IAP trên thiết bị vào bản sao lưu Google Drive</li>
       <li><strong>Mã hóa thiết bị:</strong> Dữ liệu được bảo vệ bởi mã hóa phân vùng thiết bị nếu người dùng bật tính năng này</li>
       <li><strong>Không tài khoản:</strong> Ứng dụng không yêu cầu đăng ký, không lưu thông tin đăng nhập</li>
     </ul>
@@ -394,7 +393,7 @@
     <p>Việc tiếp tục sử dụng ứng dụng sau khi thay đổi có nghĩa là bạn chấp nhận chính sách mới. Nếu không đồng ý, bạn có thể gỡ cài đặt ứng dụng.</p>
     <h3>Lịch sử thay đổi</h3>
     <ul>
-      <li><strong>15/06/2025</strong> – Cập nhật: làm rõ cơ chế lọc packet C++ thật sự tiết kiệm data; cập nhật bảng quyền (bỏ <code>QUERY_ALL_PACKAGES</code>, thêm <code>POST_NOTIFICATIONS</code>); cập nhật mô tả VPN service.</li>
+      <li><strong>15/06/2025</strong> – Cập nhật: làm rõ cơ chế kiểm soát data cục bộ bằng C++; cập nhật bảng quyền (bỏ <code>QUERY_ALL_PACKAGES</code>, thêm <code>POST_NOTIFICATIONS</code>); cập nhật mô tả VPN service.</li>
       <li><strong>12/06/2025</strong> – Phiên bản đầu tiên. Bổ sung điều khoản AdMob, IAP và VPN cục bộ.</li>
     </ul>
   </div>
