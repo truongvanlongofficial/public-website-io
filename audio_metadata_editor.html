@@ -4,88 +4,513 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Audio Metadata Editor Privacy Policy</title>
+  <style>
+    :root {
+      --bg: #fff3eb;
+      --bg-end: #fffdfb;
+      --surface: #ffffff;
+      --surface-soft: #fff2e9;
+      --accent: #ff641f;
+      --accent-dark: #d9470c;
+      --stroke: #f2dcce;
+      --text: #1e2130;
+      --muted: #717784;
+      --line: #e1e3e8;
+      --green: #19a864;
+      --blue: #2274e8;
+      --purple: #8757f4;
+      color-scheme: light;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at 82% 8%, rgba(255, 100, 31, 0.16), transparent 28%),
+        linear-gradient(180deg, var(--bg) 0%, var(--bg-end) 52%, #fffaf7 100%);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    main {
+      width: min(980px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0 56px;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      border: 1px solid var(--stroke);
+      border-radius: 32px;
+      background:
+        linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(255, 242, 233, 0.92)),
+        radial-gradient(circle at 82% 38%, rgba(255, 100, 31, 0.18), transparent 30%);
+      box-shadow: 0 18px 42px rgba(111, 57, 24, 0.14);
+      padding: 34px;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      right: -64px;
+      bottom: -96px;
+      width: 300px;
+      height: 300px;
+      border: 1px solid rgba(255, 100, 31, 0.18);
+      border-radius: 999px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid var(--stroke);
+      border-radius: 999px;
+      background: var(--surface);
+      color: var(--accent-dark);
+      font-size: 13px;
+      font-weight: 700;
+      padding: 8px 12px;
+      box-shadow: 0 8px 20px rgba(111, 57, 24, 0.08);
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 999px;
+      background: var(--green);
+    }
+
+    h1 {
+      max-width: 680px;
+      margin: 22px 0 12px;
+      color: var(--text);
+      font-size: clamp(44px, 7vw, 76px);
+      line-height: 0.98;
+      letter-spacing: 0;
+    }
+
+    .accent {
+      color: var(--accent);
+      display: block;
+    }
+
+    .lede {
+      max-width: 640px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 26px;
+    }
+
+    .meta-chip {
+      border: 1px solid var(--stroke);
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.82);
+      color: var(--text);
+      font-size: 14px;
+      font-weight: 700;
+      padding: 12px 14px;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 300px;
+      gap: 18px;
+      margin-top: 20px;
+      align-items: start;
+    }
+
+    .policy-stack {
+      display: grid;
+      gap: 14px;
+    }
+
+    section,
+    aside {
+      border: 1px solid var(--stroke);
+      border-radius: 24px;
+      background: rgba(255, 255, 255, 0.92);
+      box-shadow: 0 12px 30px rgba(111, 57, 24, 0.08);
+    }
+
+    section {
+      padding: 24px;
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      color: var(--text);
+      font-size: 24px;
+      line-height: 1.18;
+      letter-spacing: 0;
+    }
+
+    h2::before {
+      content: "";
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      margin-right: 10px;
+      border-radius: 999px;
+      background: var(--accent);
+      vertical-align: 3px;
+    }
+
+    p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    p + p {
+      margin-top: 12px;
+    }
+
+    .summary {
+      position: sticky;
+      top: 18px;
+      padding: 18px;
+    }
+
+    .summary h2 {
+      font-size: 18px;
+    }
+
+    .summary h2::before {
+      background: var(--green);
+    }
+
+    .summary-list {
+      display: grid;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .summary-item {
+      display: grid;
+      grid-template-columns: 34px minmax(0, 1fr);
+      gap: 10px;
+      align-items: center;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: #fff;
+      padding: 12px;
+    }
+
+    .icon {
+      display: grid;
+      width: 34px;
+      height: 34px;
+      place-items: center;
+      border-radius: 999px;
+      background: var(--surface-soft);
+      color: var(--accent);
+      font-size: 18px;
+      font-weight: 800;
+    }
+
+    .summary-item strong {
+      display: block;
+      color: var(--text);
+      font-size: 14px;
+      line-height: 1.25;
+    }
+
+    .summary-item span {
+      display: block;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.35;
+      margin-top: 2px;
+    }
+
+    .link-list {
+      display: grid;
+      gap: 10px;
+      margin-top: 14px;
+      padding: 0;
+      list-style: none;
+    }
+
+    a {
+      color: var(--accent-dark);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .link-list a {
+      display: block;
+      border: 1px solid var(--stroke);
+      border-radius: 14px;
+      background: var(--surface-soft);
+      padding: 12px;
+    }
+
+    .footer-note {
+      margin-top: 20px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center;
+    }
+
+    @media (max-width: 820px) {
+      main {
+        width: min(100% - 24px, 680px);
+        padding-top: 18px;
+      }
+
+      .hero {
+        border-radius: 28px;
+        padding: 26px;
+      }
+
+      .layout {
+        grid-template-columns: 1fr;
+      }
+
+      .summary {
+        position: static;
+        order: -1;
+      }
+
+      section {
+        padding: 20px;
+      }
+    }
+
+    @media (max-width: 520px) {
+      main {
+        width: 100%;
+        padding: 0 12px 28px;
+      }
+
+      .hero {
+        border-radius: 0 0 28px 28px;
+        margin: 0 -12px;
+        padding: 28px 22px;
+      }
+
+      h1 {
+        font-size: 46px;
+      }
+
+      .lede {
+        font-size: 16px;
+      }
+
+      section,
+      aside {
+        border-radius: 22px;
+      }
+    }
+  </style>
 </head>
 <body>
   <main>
-    <h1>Privacy Policy</h1>
-    <p>Last updated: 2026-06-30</p>
+    <header class="hero">
+      <div class="eyebrow"><span class="dot"></span> Last updated: July 3, 2026</div>
+      <h1>Privacy <span class="accent">Policy</span></h1>
+      <p class="lede">
+        Audio Metadata Editor works with audio files you select, creates supported MP3 saved copies,
+        and explains how local file details, ads, and sharing actions are handled.
+      </p>
+      <div class="hero-meta" aria-label="Privacy summary">
+        <div class="meta-chip">No account required</div>
+        <div class="meta-chip">User-selected files</div>
+        <div class="meta-chip">On-device metadata editing</div>
+      </div>
+    </header>
 
-    <h2>Overview</h2>
-    <p>
-      Audio Metadata Editor helps users view and edit metadata for local audio files they choose on
-      their Android device.
-    </p>
+    <div class="layout">
+      <div class="policy-stack">
+        <section>
+          <h2>Overview</h2>
+          <p>
+            Audio Metadata Editor helps users inspect and edit metadata for local audio files they choose
+            on their Android device. The app is designed for user-selected files and does not scan the
+            device in the background.
+          </p>
+        </section>
 
-    <h2>Files And Data You Select</h2>
-    <p>
-      The app works with audio files selected by the user through the Android file picker. It reads
-      available metadata such as title, artist, album, genre, year, track number, file name, MIME
-      type, and whether cover art is present.
-    </p>
-    <p>
-      The app does not scan the device in the background and does not request broad media library
-      access for this workflow.
-    </p>
+        <section>
+          <h2>Files And Metadata You Select</h2>
+          <p>
+            The app works with audio files selected through the Android file picker. For selected files,
+            the app may read the file name, MIME type, title, artist, album, genre, year, track number,
+            file size, content URI, and whether embedded cover art is present.
+          </p>
+          <p>
+            File access is limited to files the user selects or saved copies the app creates. The app does
+            not request broad contacts, location, camera, microphone, notification, or background access
+            permissions.
+          </p>
+        </section>
 
-    <h2>Processing And Storage</h2>
-    <p>
-      Metadata reading and supported MP3 tag writing are performed on the device. When saving is
-      supported, the app creates a new MP3 copy instead of silently changing the original selected
-      file.
-    </p>
-    <p>
-      Saved MP3 copies are written to the device media library under Music/Audio Metadata Editor
-      when supported by the Android version. The app stores a small local recent-edit history on the
-      device so users can see recently edited file names.
-    </p>
+        <section>
+          <h2>On-Device Processing</h2>
+          <p>
+            Metadata reading and supported MP3 tag writing are performed on the device. The app does not
+            upload selected audio files to a server for metadata editing.
+          </p>
+          <p>
+            When saving is supported, the app creates a new MP3 copy with the edited tags. It does not
+            silently modify the original selected file.
+          </p>
+        </section>
 
-    <h2>Permissions</h2>
-    <p>
-      The app requests Internet access so third-party ads can load. File access is handled through
-      the Android file picker for files the user selects. The current app manifest does not request
-      contacts, location, camera, microphone, notifications, or background access permissions.
-    </p>
+        <section>
+          <h2>Saved Copies And Local History</h2>
+          <p>
+            Saved MP3 copies are written to the Android media library under Music/Audio Metadata Editor
+            when supported by the Android version. The app stores a local recent-save history on the
+            device so users can inspect saved copy names, paths, content URIs, file sizes, MIME types,
+            save times, and the metadata values written to those copies.
+          </p>
+          <p>
+            The local history is stored in app preferences and is used only to show recent saved copies in
+            the app. The current implementation keeps up to 20 recent saved-copy records.
+          </p>
+        </section>
 
-    <h2>Ads, Analytics, Billing, And Third-Party SDKs</h2>
-    <p>
-      The app includes Google Mobile Ads. Ads may use device, ad, diagnostic, and usage data
-      according to Google's policies and the user's device settings. Interstitial ads may appear
-      after a successful save. Banner ad support may exist in the app configuration, but ads should
-      not block reading or editing a single selected file.
-    </p>
-    <p>
-      The current implementation does not include account login, subscriptions, in-app purchases, or
-      a custom analytics workflow.
-    </p>
+        <section>
+          <h2>Open, Share, Locate, And Clipboard Actions</h2>
+          <p>
+            From saved-copy details, users can choose to open, share, or locate a saved copy using Android
+            system apps. These actions are initiated by the user and may pass the selected saved file URI
+            to the app the user chooses.
+          </p>
+          <p>
+            Users can also copy saved file paths or content URIs to the Android clipboard. Clipboard
+            contents are managed by Android and may be accessible to apps according to the user's device
+            settings and Android version.
+          </p>
+        </section>
 
-    <h2>Data Sharing</h2>
-    <p>
-      User-selected audio files are processed on the device by the app workflow. The app does not
-      upload selected audio files to a server. Third-party ad SDKs may process advertising and
-      diagnostics data according to their own privacy policies.
-    </p>
+        <section>
+          <h2>Permissions</h2>
+          <p>
+            The app requests Internet access so Google Mobile Ads can load. File selection is handled
+            through Android system file picker and media APIs for user-selected files and app-created
+            saved copies.
+          </p>
+        </section>
 
-    <h2>Children</h2>
-    <p>
-      Audio Metadata Editor is intended for a general audience and is not directed to children.
-    </p>
+        <section>
+          <h2>Ads And Third-Party SDKs</h2>
+          <p>
+            The app includes Google Mobile Ads. A banner ad may appear pinned to the bottom of the editor
+            screen, and interstitial ads may appear after a successful save. Google Mobile Ads and related
+            services may process device, advertising, diagnostic, and usage data according to Google's
+            policies and the user's device settings.
+          </p>
+          <p>
+            The current implementation does not include account login, subscriptions, in-app purchases,
+            rewarded purchases, or a custom analytics workflow.
+          </p>
+        </section>
 
-    <h2>Changes To This Policy</h2>
-    <p>
-      This policy may be updated when app behavior, permissions, ads, storage, or file handling
-      changes.
-    </p>
+        <section>
+          <h2>Data Sharing</h2>
+          <p>
+            The app does not sell user-selected audio files or upload them to an app-operated server.
+            User-selected audio files remain on the device during the app's metadata workflow. Data may
+            be shared only when the user chooses a system action such as Share, or when third-party ad
+            SDKs process advertising and diagnostics data according to their own policies.
+          </p>
+        </section>
 
-    <h2>Contact</h2>
-    <p>
-      For privacy questions, use the developer contact listed on the app's Google Play listing.
-    </p>
+        <section>
+          <h2>Data Retention And Control</h2>
+          <p>
+            Saved copies remain in the device media library until the user deletes them using Android or a
+            compatible file or media app. Local recent-save history remains in the app's local storage
+            until the app is cleared, uninstalled, or the implementation provides a deletion control.
+          </p>
+        </section>
 
-    <h2>Third-Party Privacy Links</h2>
-    <ul>
-      <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></li>
-      <li><a href="https://developers.google.com/admob/android/privacy/play-data-disclosure" target="_blank" rel="noopener noreferrer">Google Mobile Ads SDK data disclosure guidance</a></li>
-    </ul>
+        <section>
+          <h2>Children</h2>
+          <p>
+            Audio Metadata Editor is intended for a general audience and is not directed to children.
+          </p>
+        </section>
+
+        <section>
+          <h2>Changes To This Policy</h2>
+          <p>
+            This policy may be updated when app behavior, permissions, ads, storage, third-party SDKs, or
+            file handling changes.
+          </p>
+        </section>
+
+        <section>
+          <h2>Contact</h2>
+          <p>
+            For privacy questions, use the developer contact listed on the app's Google Play listing.
+          </p>
+        </section>
+
+        <section>
+          <h2>Third-Party Privacy Links</h2>
+          <ul class="link-list">
+            <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></li>
+            <li><a href="https://developers.google.com/admob/android/privacy/play-data-disclosure" target="_blank" rel="noopener noreferrer">Google Mobile Ads SDK data disclosure guidance</a></li>
+          </ul>
+        </section>
+      </div>
+
+      <aside class="summary" aria-label="Quick privacy summary">
+        <h2>Quick Summary</h2>
+        <div class="summary-list">
+          <div class="summary-item">
+            <div class="icon">1</div>
+            <div>
+              <strong>Files stay user-selected</strong>
+              <span>The app works with audio files you pick.</span>
+            </div>
+          </div>
+          <div class="summary-item">
+            <div class="icon">2</div>
+            <div>
+              <strong>Saved copies are new files</strong>
+              <span>The original selected file is not silently changed.</span>
+            </div>
+          </div>
+          <div class="summary-item">
+            <div class="icon">3</div>
+            <div>
+              <strong>Recent history is local</strong>
+              <span>Saved-copy details are stored on the device.</span>
+            </div>
+          </div>
+          <div class="summary-item">
+            <div class="icon">4</div>
+            <div>
+              <strong>Ads may load</strong>
+              <span>Google Mobile Ads may process ad and diagnostic data.</span>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <p class="footer-note">Audio Metadata Editor - privacy information for Google Play and app users.</p>
   </main>
 </body>
 </html>
