@@ -1,47 +1,253 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Privacy Policy - 2048 Puzzle Challenge</title>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy - 2048</title>
   <style>
-    body { max-width: 900px; margin: auto; font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; }
-    h1 { margin-top: 30px; }
+    :root {
+      color-scheme: light dark;
+      --bg: #101214;
+      --panel: #181c20;
+      --text: #f4f1e8;
+      --muted: #c9c2b5;
+      --line: #333a42;
+      --accent: #ffd166;
+      --link: #7cc7ff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      line-height: 1.65;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    main {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0 72px;
+    }
+
+    header {
+      padding: 32px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      line-height: 1.1;
+      letter-spacing: 0;
+    }
+
+    h2 {
+      margin: 36px 0 12px;
+      font-size: 1.35rem;
+      line-height: 1.25;
+      letter-spacing: 0;
+    }
+
+    p, li {
+      color: var(--muted);
+    }
+
+    strong {
+      color: var(--text);
+    }
+
+    a {
+      color: var(--link);
+    }
+
+    section {
+      padding-bottom: 4px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    ul {
+      padding-left: 22px;
+    }
+
+    .meta {
+      margin: 0;
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    .note {
+      padding: 16px 18px;
+      border-left: 4px solid var(--accent);
+      background: rgba(255, 209, 102, 0.08);
+      border-radius: 4px;
+    }
+
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #fbf7ef;
+        --panel: #ffffff;
+        --text: #24201d;
+        --muted: #5f5750;
+        --line: #ddd3c5;
+        --accent: #a66a00;
+        --link: #0b66b3;
+      }
+    }
   </style>
 </head>
 <body>
+  <main>
+    <header>
+      <h1>Privacy Policy</h1>
+      <p class="meta">2048 - Last updated: July 7, 2026</p>
+    </header>
 
-<h1>Privacy Policy</h1>
-<p>Last updated: November 21, 2025</p>
+    <p class="note">
+      This Privacy Policy explains how the 2048 mobile game ("the App", "we", "our", or "us") handles information when you install, open, and play the App.
+    </p>
 
-<p>This Privacy Policy describes how the application <strong>2048 Puzzle Challenge</strong> (“the App”) handles user data.</p>
+    <section>
+      <h2>Information We Collect</h2>
+      <p>
+        The App does not require an account and does not ask you to provide your name, email address, phone number, contacts, photos, precise location, or payment information.
+      </p>
+      <p>
+        The App may process the following information:
+      </p>
+      <ul>
+        <li><strong>Gameplay data stored on your device:</strong> scores, best score, game mode state, board state, coins, rewards, achievements, settings, and similar progress data.</li>
+        <li><strong>Advertising data:</strong> information used by Google AdMob to show ads, measure ad performance, prevent fraud, and provide rewarded ads.</li>
+        <li><strong>Analytics data:</strong> app usage events, device information, approximate region, app version, session activity, and similar diagnostics collected through Firebase Analytics.</li>
+        <li><strong>Crash data:</strong> crash reports, stack traces, device state, operating system version, app version, and related diagnostics collected through Firebase Crashlytics.</li>
+        <li><strong>Consent choices:</strong> privacy and advertising consent choices handled through Google's User Messaging Platform where required.</li>
+      </ul>
+    </section>
 
-<h2>Developer Information</h2>
-<p><strong>Developer:</strong> Truong Van Long<br>
-<strong>Email:</strong> longtv25102000@gmail.com<br>
-<strong>Address:</strong> Viet Nam</p>
+    <section>
+      <h2>How We Use Information</h2>
+      <p>
+        We use information to:
+      </p>
+      <ul>
+        <li>save your local game progress and preferences;</li>
+        <li>show banner, interstitial, and rewarded ads;</li>
+        <li>grant in-game rewards after eligible rewarded ads;</li>
+        <li>understand app performance and improve gameplay quality;</li>
+        <li>detect, diagnose, and fix crashes or technical problems;</li>
+        <li>comply with advertising consent and privacy requirements.</li>
+      </ul>
+    </section>
 
-<h2>Data Collection</h2>
-<p>The App does <strong>not collect, store, transmit, or share</strong> any personal or sensitive user data.</p>
+    <section>
+      <h2>Advertising</h2>
+      <p>
+        The App uses Google AdMob. AdMob may collect and process information such as device identifiers, advertising identifiers, IP address, ad interactions, coarse location signals, and diagnostic information to provide, personalize, measure, and improve ads, depending on your region and consent choices.
+      </p>
+      <p>
+        Rewarded ads are optional. If you choose to watch a rewarded ad, the App grants the displayed in-game reward after the ad reward is confirmed.
+      </p>
+      <p>
+        You can learn more about how Google uses information from apps and sites that use its services here:
+        <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">https://policies.google.com/technologies/partner-sites</a>.
+        You can also review Google's advertising information here:
+        <a href="https://policies.google.com/technologies/ads" rel="noopener">https://policies.google.com/technologies/ads</a>.
+      </p>
+    </section>
 
-<h2>Data Usage</h2>
-<p>Since the App does not collect any data, no data is used for analytics, advertising, or tracking purposes.</p>
+    <section>
+      <h2>Analytics and Crash Reporting</h2>
+      <p>
+        The App uses Firebase Analytics to understand general app usage and Firebase Crashlytics to identify crashes and stability issues. These services are provided by Google Firebase.
+      </p>
+      <p>
+        You can learn more about Firebase privacy and security here:
+        <a href="https://firebase.google.com/support/privacy" rel="noopener">https://firebase.google.com/support/privacy</a>.
+      </p>
+    </section>
 
-<h2>Third-Party Services</h2>
-<p>The App does not use any third-party SDKs that collect personal data.</p>
+    <section>
+      <h2>Consent Choices in the EEA, UK, and Switzerland</h2>
+      <p>
+        Where required, the App uses Google's User Messaging Platform to request and manage consent for ads and analytics-related processing. Depending on your location and the choices available to you, you may be able to accept, reject, or customize certain data processing purposes.
+      </p>
+      <p>
+        The App includes a privacy options entry in Settings when privacy options are available, so you can revisit your choices.
+      </p>
+      <p>
+        Google provides more information about User Messaging Platform here:
+        <a href="https://developers.google.com/admob/android/privacy" rel="noopener">https://developers.google.com/admob/android/privacy</a>.
+      </p>
+    </section>
 
-<h2>Children’s Privacy</h2>
-<p>The App is suitable for all ages and does not collect information from children.</p>
+    <section>
+      <h2>Local Game Data</h2>
+      <p>
+        Scores, coins, rewards, game state, achievements, and settings are stored locally on your device. We do not currently provide cloud sync, account login, multiplayer servers, or online leaderboards.
+      </p>
+      <p>
+        If you uninstall the App, local game data may be deleted by your device operating system.
+      </p>
+    </section>
 
-<h2>Data Deletion</h2>
-<p>Because no personal data is collected, there is no data to delete.</p>
+    <section>
+      <h2>Sharing of Information</h2>
+      <p>
+        We do not sell your personal information. We may share or allow processing of information with service providers used by the App, including Google AdMob and Firebase, as described in this Privacy Policy. These providers process information according to their own terms and privacy policies.
+      </p>
+    </section>
 
-<h2>Changes to This Policy</h2>
-<p>We may update this Privacy Policy from time to time. Changes will be posted on this page.</p>
+    <section>
+      <h2>Children's Privacy</h2>
+      <p>
+        The App is not directed to children under 13. We do not knowingly collect personal information directly from children under 13. If you believe a child has provided personal information through the App, please contact us so we can review and take appropriate action.
+      </p>
+    </section>
 
-<h2>Contact Us</h2>
-<p>If you have any questions about this Privacy Policy, contact us at:<br>
-<strong>longtv25102000@gmail.com</strong></p>
+    <section>
+      <h2>Data Retention</h2>
+      <p>
+        Local gameplay data remains on your device until you reset progress, clear app data, or uninstall the App. Analytics, advertising, and crash data are retained by Google according to the applicable Google and Firebase retention practices.
+      </p>
+    </section>
 
+    <section>
+      <h2>Your Choices</h2>
+      <ul>
+        <li>You can reset or clear local game data using the App settings or your device settings.</li>
+        <li>You can manage advertising choices through your device advertising settings.</li>
+        <li>Where available, you can revisit consent choices through the App's privacy options.</li>
+        <li>You can stop all App data processing by uninstalling the App.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Security</h2>
+      <p>
+        We use platform and service-provider safeguards intended to protect information processed by the App. However, no method of storage or transmission is completely secure.
+      </p>
+    </section>
+
+    <section>
+      <h2>Changes to This Policy</h2>
+      <p>
+        We may update this Privacy Policy from time to time. When we update it, we will change the "Last updated" date above. Continued use of the App after an update means the revised policy applies.
+      </p>
+    </section>
+
+    <section>
+      <h2>Contact Us</h2>
+      <p>
+        If you have questions about this Privacy Policy, please contact the developer using the contact email shown on the App's Google Play listing.
+      </p>
+    </section>
+  </main>
 </body>
 </html>
